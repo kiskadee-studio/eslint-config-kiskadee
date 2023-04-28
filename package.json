@@ -1,0 +1,52 @@
+{
+  "name": "eslint-config-kiskadee",
+  "version": "1.0.0",
+  "description": "Definitive ESLint config for ESLint, Airbnb Style Guide, React, React Hooks, Prettier, TypeScript e Unicorn",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "airbnb",
+    "typescript",
+    "prettier",
+    "unicorn",
+    "react"
+  ],
+  "author": "Rodrigo José Carvalho de Mello",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest-dom": "^4.0.3",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unicorn": "^46.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.x",
+    "@typescript-eslint/parser": "5.x",
+    "eslint": "8.x",
+    "eslint-config-airbnb": "19.x",
+    "eslint-config-airbnb-base": "15.x",
+    "eslint-config-prettier": "8.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jest-dom": "4.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "4.x",
+    "eslint-plugin-react": "6.x",
+    "eslint-plugin-react-hooks": "4.x",
+    "eslint-plugin-unicorn": "46.x",
+    "eslint-plugin-unused-imports": "2.x",
+    "prettier": "2.x",
+    "typescript": "5.x"
+  }
+}
