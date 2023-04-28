@@ -33,11 +33,19 @@ const essentialTypeScriptRules = {
       extensions: ['.tsx'],
     },
   ],
+
+  /**
+   * The purpose of this rule is to safeguard the integrity of imported
+   * files through extension validation. By applying this configuration, we
+   * ensure compatibility with TypeScript files.
+   */
   'import/extensions': [
     'error',
-    'ignorePackages',
     {
-      extensions: ['.ts', '.tsx'],
+      js: 'never',
+      jsx: 'never',
+      ts: 'never',
+      tsx: 'never',
     },
   ],
 

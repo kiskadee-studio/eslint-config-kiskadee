@@ -104,6 +104,10 @@ module.exports = (
            * @see {@link https://typescript-eslint.io/getting-started}
            */
           'plugin:@typescript-eslint/recommended',
+
+          /**
+           * @see {@link https://github.com/import-js/eslint-plugin-import#typescript}
+           */
           'plugin:import/typescript',
 
           //--------------------------------------------------------------------
