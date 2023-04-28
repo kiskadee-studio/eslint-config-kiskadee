@@ -140,5 +140,14 @@ module.exports = (
         },
       },
     ],
+    settings: {
+      /**
+       * @see {@link https://github.com/import-js/eslint-plugin-import#typescript}
+       */
+      'import/resolver': {
+        typescript: true,
+        node: true,
+      },
+    },
   };
 };
