@@ -2,14 +2,14 @@ const essentialJavaScriptRules = {
   /**
    * Remove unused imports
    */
-  "unused-imports/no-unused-imports": "error",
-  "unused-imports/no-unused-vars": [
-    "warn",
+  'unused-imports/no-unused-imports': 'error',
+  'unused-imports/no-unused-vars': [
+    'warn',
     {
-      vars: "all",
-      varsIgnorePattern: "^_",
-      args: "after-used",
-      argsIgnorePattern: "^_",
+      vars: 'all',
+      varsIgnorePattern: '^_',
+      args: 'after-used',
+      argsIgnorePattern: '^_',
     },
   ],
 
@@ -25,7 +25,7 @@ const essentialJavaScriptRules = {
    * @see {@link https://prettier.io/docs/en/options.html#quotes}
    * @see {@link https://github.com/prettier/eslint-plugin-prettier#options}
    */
-  "prettier/prettier": ["error", { singleQuote: true }],
+  'prettier/prettier': ['error', { singleQuote: true }],
 
   /**
    * A multitude of abbreviations are widely recognized among developers.
@@ -35,7 +35,7 @@ const essentialJavaScriptRules = {
    * focuses on a single case instead of addressing more comprehensive
    * naming practices.
    */
-  "unicorn/prevent-abbreviations": "off",
+  'unicorn/prevent-abbreviations': 'off',
 };
 
 const essentialJavaScriptOnlyRules = {
@@ -47,13 +47,13 @@ const essentialJavaScriptOnlyRules = {
    * The "unused-imports/no-unused-vars" plugin needs to disable this
    * rule in order to successfully remove unused imports.
    */
-  "no-unused-vars": "off",
+  'no-unused-vars': 'off',
 
   /**
    * Adopting JavaScript modules (ESM) is not applicable for general
    * configuration files.
    */
-  "unicorn/prefer-module": "off",
+  'unicorn/prefer-module': 'off',
 };
 
 const extraJavaScriptRules = {
@@ -63,7 +63,7 @@ const extraJavaScriptRules = {
    * that it carries too many responsibilities, and restructuring its logic
    * across multiple modules would be advantageous.
    */
-  "max-lines": ["error", 500],
+  'max-lines': ['error', 500],
 
   /**
    * When substituting null with undefined, there may be situations where
@@ -75,7 +75,7 @@ const extraJavaScriptRules = {
    * null and undefined cases explicitly, according to their specific
    * requirements, and avoids any unintended consequences.
    */
-  "unicorn/no-useless-undefined": "off",
+  'unicorn/no-useless-undefined': 'off',
 
   /**
    * Rules that impose limitations on syntax usage go beyond the purview of
@@ -84,12 +84,12 @@ const extraJavaScriptRules = {
    * of these rules are significant for your project, please enable them in
    * your project's settings.
    */
-  "no-restricted-syntax": "off",
-  "no-param-reassign": "off",
-  "no-restricted-exports": "off",
-  "no-plusplus": "off",
-  "unicorn/no-array-reduce": "off",
-  "import/prefer-default-export": "off",
+  'no-restricted-syntax': 'off',
+  'no-param-reassign': 'off',
+  'no-restricted-exports': 'off',
+  'no-plusplus': 'off',
+  'unicorn/no-array-reduce': 'off',
+  'import/prefer-default-export': 'off',
 };
 
 module.exports = {

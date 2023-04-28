@@ -1,4 +1,4 @@
-const config = require("./index");
+const config = require('./index');
 
 module.exports = {
   ...config,

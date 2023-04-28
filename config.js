@@ -1,9 +1,9 @@
 const {
   essentialJavaScriptRules,
   essentialJavaScriptOnlyRules,
-} = require("./rules/javascript");
-const { essentialTypeScriptRules } = require("./rules/typescript");
-const { extraReactRules } = require("./rules/react");
+} = require('./rules/javascript');
+const { essentialTypeScriptRules } = require('./rules/typescript');
+const { extraReactRules } = require('./rules/react');
 
 module.exports = (
   extraJavaScriptRules,
@@ -26,17 +26,17 @@ module.exports = (
       /**
        * @see {@link https://www.npmjs.com/package/eslint-config-airbnb-base}
        */
-      "airbnb-base",
+      'airbnb-base',
 
       /**
        * @see {@link https://github.com/sindresorhus/eslint-plugin-unicorn}
        */
-      "plugin:unicorn/recommended",
+      'plugin:unicorn/recommended',
 
       /**
        * @see {@link https://github.com/prettier/eslint-plugin-prettier}
        */
-      "plugin:prettier/recommended",
+      'plugin:prettier/recommended',
     ],
 
     rules: {
@@ -51,7 +51,7 @@ module.exports = (
 
     overrides: [
       {
-        files: ["**/*.ts", "**/*.tsx"],
+        files: ['**/*.ts', '**/*.tsx'],
 
         env: {
           browser: true,
@@ -60,15 +60,15 @@ module.exports = (
           node: true,
         },
 
-        parser: "@typescript-eslint/parser",
+        parser: '@typescript-eslint/parser',
 
         parserOptions: {
           ecmaFeatures: {
             jsx: true,
           },
-          ecmaVersion: "latest",
-          sourceType: "module",
-          project: ["./tsconfig.json"],
+          ecmaVersion: 'latest',
+          sourceType: 'module',
+          project: ['./tsconfig.json'],
         },
 
         extends: [
@@ -79,13 +79,13 @@ module.exports = (
           /**
            * @see {@link https://www.npmjs.com/package/eslint-config-airbnb}
            */
-          "airbnb",
-          "airbnb/hooks",
+          'airbnb',
+          'airbnb/hooks',
 
           /**
            * @see {@link https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config}
            */
-          "plugin:unicorn/recommended",
+          'plugin:unicorn/recommended',
 
           //--------------------------------------------------------------------
           // Jest
@@ -94,7 +94,7 @@ module.exports = (
           /**
            * @see {@link https://www.npmjs.com/package/eslint-plugin-jest-dom}
            */
-          "plugin:jest-dom/recommended",
+          'plugin:jest-dom/recommended',
 
           //--------------------------------------------------------------------
           // TypeScript
@@ -103,17 +103,17 @@ module.exports = (
           /**
            * @see {@link https://typescript-eslint.io/getting-started}
            */
-          "plugin:@typescript-eslint/recommended",
-          "plugin:import/typescript",
+          'plugin:@typescript-eslint/recommended',
+          'plugin:import/typescript',
 
           //--------------------------------------------------------------------
           // Prettier
           //--------------------------------------------------------------------
 
-          "plugin:prettier/recommended",
+          'plugin:prettier/recommended',
         ],
 
-        plugins: ["unused-imports"],
+        plugins: ['unused-imports'],
 
         rules: {
           ...essentialJavaScriptRules,
@@ -129,7 +129,7 @@ module.exports = (
       //------------------------------------------------------------------------
 
       {
-        files: ["**/*.tsx"],
+        files: ['**/*.tsx'],
         rules: {
           ...essentialReactRules,
           ...extraReactRules,
