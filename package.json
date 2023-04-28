@@ -1,15 +1,22 @@
 {
   "name": "eslint-config-kiskadee",
   "version": "1.0.0",
-  "description": "Definitive ESLint config for ESLint, Airbnb Style Guide, React, React Hooks, Prettier, TypeScript e Unicorn",
+  "description": "Definitive ESLint config for ESLint, Airbnb Style Guide, React, React Hooks, Prettier, TypeScript, Unicorn and more",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "vanilla.js"
+  ],
   "keywords": [
     "eslint",
     "airbnb",
     "typescript",
     "prettier",
     "unicorn",
-    "react"
+    "react",
+    "react-hooks",
+    "jest",
+    "unused-imports"
   ],
   "author": "Rodrigo José Carvalho de Mello",
   "license": "ISC",
@@ -32,21 +39,6 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.x",
-    "@typescript-eslint/parser": "5.x",
-    "eslint": "8.x",
-    "eslint-config-airbnb": "19.x",
-    "eslint-config-airbnb-base": "15.x",
-    "eslint-config-prettier": "8.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jest-dom": "4.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-prettier": "4.x",
-    "eslint-plugin-react": "6.x",
-    "eslint-plugin-react-hooks": "4.x",
-    "eslint-plugin-unicorn": "46.x",
-    "eslint-plugin-unused-imports": "2.x",
-    "prettier": "2.x",
-    "typescript": "5.x"
+    "eslint": ">= 8"
   }
 }

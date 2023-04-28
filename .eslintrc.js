@@ -1,1 +1,5 @@
-module.exports = require('.');
+const config = require("./index");
+
+module.exports = {
+  ...config,
+};
