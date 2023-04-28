@@ -1,29 +1,4 @@
-module.exports = {
-  /**
-   * Restricting the number of lines in a file promotes improved code
-   * organization. A file with an excessive number of lines could suggest
-   * that it carries too many responsibilities, and restructuring its logic
-   * across multiple modules would be advantageous.
-   */
-  "max-lines": ["error", 500],
-
-  /**
-   * Numerous abbreviations are already widely recognized among developers.
-   * The responsibility for maintaining consistent naming extends beyond the
-   * use of simple abbreviations.
-   */
-  "unicorn/prevent-abbreviations": "off",
-
-  /**
-   * Prettier uses double quotes by default; however, the Airbnb style guide
-   * recommends single quotes. For this reason, we have chosen to stick with
-   * single quotes.
-   * @see {@link https://github.com/airbnb/javascript#strings--quotes}
-   * @see {@link https://prettier.io/docs/en/options.html#quotes}
-   * @see {@link https://github.com/prettier/eslint-plugin-prettier#options}
-   */
-  "prettier/prettier": ["error", { singleQuote: true }],
-
+const essentialJavaScriptRules = {
   /**
    * Remove unused imports
    */
@@ -37,6 +12,58 @@ module.exports = {
       argsIgnorePattern: "^_",
     },
   ],
+
+  //----------------------------------------------------------------------------
+  // Fixes conflicts between different ESLint configurations
+  //----------------------------------------------------------------------------
+
+  /**
+   * Prettier uses double quotes by default; however, the Airbnb style guide
+   * recommends single quotes. For this reason, we have chosen to stick with
+   * single quotes.
+   * @see {@link https://github.com/airbnb/javascript#strings--quotes}
+   * @see {@link https://prettier.io/docs/en/options.html#quotes}
+   * @see {@link https://github.com/prettier/eslint-plugin-prettier#options}
+   */
+  "prettier/prettier": ["error", { singleQuote: true }],
+
+  /**
+   * A multitude of abbreviations are widely recognized among developers.
+   * The task of maintaining consistent naming goes beyond merely avoiding
+   * familiar abbreviations. Introducing a rule to carve out an exception
+   * solely for React 'props' appears to be an imbalanced approach, as it
+   * focuses on a single case instead of addressing more comprehensive
+   * naming practices.
+   */
+  "unicorn/prevent-abbreviations": "off",
+};
+
+const essentialJavaScriptOnlyRules = {
+  //----------------------------------------------------------------------------
+  // Fixes conflicts between different ESLint configurations
+  //----------------------------------------------------------------------------
+
+  /**
+   * The "unused-imports/no-unused-vars" plugin needs to disable this
+   * rule in order to successfully remove unused imports.
+   */
+  "no-unused-vars": "off",
+
+  /**
+   * Adopting JavaScript modules (ESM) is not applicable for general
+   * configuration files.
+   */
+  "unicorn/prefer-module": "off",
+};
+
+const extraJavaScriptRules = {
+  /**
+   * Restricting the number of lines in a file promotes improved code
+   * organization. A file with an excessive number of lines could suggest
+   * that it carries too many responsibilities, and restructuring its logic
+   * across multiple modules would be advantageous.
+   */
+  "max-lines": ["error", 500],
 
   /**
    * When substituting null with undefined, there may be situations where
@@ -63,4 +90,10 @@ module.exports = {
   "no-plusplus": "off",
   "unicorn/no-array-reduce": "off",
   "import/prefer-default-export": "off",
+};
+
+module.exports = {
+  essentialJavaScriptRules,
+  essentialJavaScriptOnlyRules,
+  extraJavaScriptRules,
 };

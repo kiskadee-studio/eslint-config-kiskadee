@@ -1,8 +1,8 @@
-const javascriptRules = require("./rules/javascript");
-const typescriptRules = require("./rules/typescript");
-const reactRules = require("./rules/react");
+const { extraJavaScriptRules } = require("./rules/javascript");
+const { extraTypeScriptRules } = require("./rules/typescript");
+const { extraReactRules } = require("./rules/react");
 const config = require("./config");
 
 module.exports = {
-  ...config(javascriptRules, typescriptRules, reactRules),
+  ...config(extraJavaScriptRules, extraTypeScriptRules, extraReactRules),
 };

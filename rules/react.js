@@ -1,9 +1,21 @@
-module.exports = {
-  /**
-   * The use of React.PropTypes is not recommended when working with TypeScript.
-   */
-  "react/require-default-props": "off",
+const essentialReactRules = {
+  //----------------------------------------------------------------------------
+  // Fixes conflicts between different ESLint configurations
+  //----------------------------------------------------------------------------
 
+  /**
+   * With JavaScript, using the spread operator can create uncertainty
+   * regarding the contents of props, making it difficult to maintain
+   * readability. However, with TypeScript's strong typing system, this
+   * concern is reduced as the type of the variable is known, making it
+   * easier to ensure code clarity and maintainability.
+   * @see {@link https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md}
+   * @see {@link https://www.typescriptlang.org/docs/handbook/interfaces.html}
+   */
+  "react/jsx-props-no-spreading": "off",
+};
+
+const extraReactRules = {
   /**
    * Establishes a consistent approach to declaring React components using
    * arrow functions, as class components are no longer recommended.
@@ -42,19 +54,10 @@ module.exports = {
   "react/jsx-boolean-value": ["error", "always"],
 
   /**
-   * With JavaScript, using the spread operator can create uncertainty
-   * regarding the contents of props, making it difficult to maintain
-   * readability. However, with TypeScript's strong typing system, this
-   * concern is reduced as the type of the variable is known, making it
-   * easier to ensure code clarity and maintainability.
-   * @see {@link https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md}
-   * @see {@link https://www.typescriptlang.org/docs/handbook/interfaces.html}
-   */
-  "react/jsx-props-no-spreading": "off",
-
-  /**
    * Specifying all dependencies is not always required, and at times, this
    * rule may cause more problems than it solves.
    */
   "react-hooks/exhaustive-deps": "off",
 };
+
+module.exports = { essentialReactRules, extraReactRules };

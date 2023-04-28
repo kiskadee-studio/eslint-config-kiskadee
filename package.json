@@ -16,7 +16,9 @@
     "react",
     "react-hooks",
     "jest",
-    "unused-imports"
+    "import",
+    "unused-imports",
+    "jsx-a11y"
   ],
   "author": "Rodrigo José Carvalho de Mello",
   "license": "ISC",
