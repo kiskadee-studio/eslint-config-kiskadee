@@ -78,6 +78,17 @@ const extraJavaScriptRules = {
   'unicorn/no-useless-undefined': 'off',
 
   /**
+   * Relocating a file to a different folder may necessitate updating all
+   * import statements within that file. However, this issue can be avoided
+   * by using absolute import paths. This ESLint rule assists in ensuring
+   * that absolute import paths are consistently implemented.
+   */
+  'no-relative-import-paths/no-relative-import-paths': [
+    'error',
+    { allowSameFolder: false, rootDir: '/', prefix: '@' },
+  ],
+
+  /**
    * Rules that impose limitations on syntax usage go beyond the purview of
    * ESLint. We hold the view that certain decisions should be made by
    * developers themselves, rather than constraining their choices. If any

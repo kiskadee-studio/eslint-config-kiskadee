@@ -117,7 +117,7 @@ module.exports = (
           'plugin:prettier/recommended',
         ],
 
-        plugins: ['unused-imports'],
+        plugins: ['unused-imports', 'no-relative-import-paths'],
 
         rules: {
           ...essentialJavaScriptRules,
