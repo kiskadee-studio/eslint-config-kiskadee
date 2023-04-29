@@ -8,6 +8,32 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
     npm install -D eslint-config-kiskadee eslint typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-config-airbnb eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths prettier
 ```
 
+## Essential Rules
+
+- TypeScript Plugin (recommended rules)
+- Airbnb Style Guide (recommended rules)
+  - JavaScript
+  - React Plugin
+  - React Hooks Plugin
+  - Imports Plugin
+  - jsx-a11y Plugin
+- Jest Plugin (recommended rules)
+- Prettier
+
+## Great Rules
+
+- All from Essential
+- Unicorn Plugin (recommended rules)
+- Unused Imports Plugin
+- No Relative Import Paths Plugin
+
+## Default Rules
+
+- All from Great
+- Some rules modified 🤩
+
+Suggest a rule to be changed or added or plugin to be added
+
 ## .editorconfig
 
 Though Prettier excels at standardizing many code formatting aspects, the .editorconfig file helps maintain consistency across diverse IDEs and text editors. Some examples of the capabilities offered by EditorConfig include:
