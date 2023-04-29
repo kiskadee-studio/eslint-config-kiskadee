@@ -7,3 +7,28 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 ```bash
     npm install -D eslint-config-kiskadee eslint typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-config-airbnb eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths prettier
 ```
+
+## .editorconfig
+
+Though Prettier excels at standardizing many code formatting aspects, the .editorconfig file helps maintain consistency across diverse IDEs and text editors. Some examples of the capabilities offered by EditorConfig include:
+
+1. Setting indentation style (spaces or tabs) and size.
+2. Controlling end-of-line (EOL) characters (LF, CR, or CRLF).
+3. Managing character encoding (e.g., UTF-8, UTF-16).
+4. Ensuring a newline is inserted at the end of a file.
+5. Specifying whether to remove trailing whitespace.
+6. These settings contribute to a consistent codebase, regardless of the IDE or text editor being used by different team members.
+
+Create a .editorconfig file in the project root with the following content:
+
+```bash
+  root = true
+
+  [*]
+  charset = utf-8
+  indent_style = space
+  indent_size = 2
+  end_of_line = lf
+  insert_final_newline = true
+  trim_trailing_whitespace = true
+```
