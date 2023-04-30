@@ -1,5 +1,3 @@
 const config = require('./index');
 
-module.exports = {
-  ...config,
-};
+module.exports = config;

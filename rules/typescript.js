@@ -1,17 +1,7 @@
-const essentialTypeScriptRules = {
+const level1 = {
   //----------------------------------------------------------------------------
-  // Fixes conflicts between different ESLint configurations
+  // Resolves conflicts among various ESLint configurations.
   //----------------------------------------------------------------------------
-
-  /**
-   * This rule is disabled due to the "unicorn/prefer-regexp-test" rule
-   * that deals with the same issue. Since this is not an exclusive rule
-   * in the context of TypeScript, but of EcmaScript, we gave preference
-   * to Unicorn
-   * @see {@link https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md}
-   * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-regexp-exec.md}
-   */
-  '@typescript-eslint/prefer-regexp-exec': 'off',
 
   /**
    * It's not required to enforce the "no-use-before-define" rule in
@@ -21,18 +11,10 @@ const essentialTypeScriptRules = {
   'no-use-before-define': 'off',
 
   /**
-   * This rule was originally created to guarantee the use of components
-   * in JSX files, but because we adopt TypeScript as a standard this rule
-   * needs to be adjusted for TSX
-   * @see {@link https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md}
-   * @see {@link https://www.typescriptlang.org/docs/handbook/jsx.html}
+   * Disabled due to the type inference in Typescript
+   * @see {@link https://www.typescriptlang.org/docs/handbook/type-inference.html}
    */
-  'react/jsx-filename-extension': [
-    'error',
-    {
-      extensions: ['.tsx'],
-    },
-  ],
+  'consistent-return': 'off',
 
   /**
    * The purpose of this rule is to safeguard the integrity of imported
@@ -48,58 +30,31 @@ const essentialTypeScriptRules = {
       tsx: 'never',
     },
   ],
+};
+
+const level2 = {
+  //----------------------------------------------------------------------------
+  // Resolves conflicts among various ESLint configurations.
+  //----------------------------------------------------------------------------
 
   /**
-   * Disabled due to the type inference in Typescript
+   * This rule is deactivated because the "unicorn/prefer-regexp-test" rule
+   * already handles the same matter. Since the context is not exclusive to
+   * TypeScript but also applies to EcmaScript, the Unicorn rule is given
+   * preference.
+   * @see {@link https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md}
+   * @see {@link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-regexp-exec.md}
    */
-  'consistent-return': 'off',
-
-  /**
-   * The goal is to preserve kebab-case as the standard naming
-   * convention, following Unicorn's recommendation, while making an
-   * exception for React components that require PascalCase.
-   * @see {@link https://github.com/airbnb/javascript/tree/master/react#naming }
-   * @see {@link https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md}
-   * @see {@link https://stackoverflow.com/questions/2103596/regex-that-matches-camel-and-pascal-case}
-   */
-  'unicorn/filename-case': [
-    'error',
-    {
-      cases: {
-        kebabCase: true,
-      },
-      ignore: [
-        // React components, test, styles, etc
-        '^(?:[A-Z][a-z]+)+(\\.[a-z]+)?\\.ts(x)?$',
-
-        // React Hooks
-        '^(use)(?:[A-Z][a-z]+)+\\.ts?$',
-
-        // Typescript config
-        'setupTests.ts',
-      ],
-    },
-  ],
+  '@typescript-eslint/prefer-regexp-exec': 'off',
 
   /**
    * The "unused-imports/no-unused-vars" plugin needs to disable this
    * rule in order to successfully remove unused imports.
    */
   '@typescript-eslint/no-unused-vars': 'off',
-
-  //--------------------------------------------------------------------
-  // Jest
-  //--------------------------------------------------------------------
-
-  'import/no-extraneous-dependencies': [
-    'error',
-    {
-      devDependencies: ['**/*.test.tsx', '**/setupTests.ts'],
-    },
-  ],
 };
 
-const extraTypeScriptRules = {
+const level3 = {
   /**
    * TypeScript allows specifying a type keyword on imports to
    * indicate that the export exists only in the type system, not at
@@ -135,12 +90,17 @@ const extraTypeScriptRules = {
   '@typescript-eslint/explicit-function-return-type': 'error',
 
   /**
-   * We enabled all TypeScript rules, but there are rules that encourage
-   * or not the use of Non-null assertion operator, we chose to disable
-   * the only rule that discourages
+   * In certain cases, seasoned developers may find it necessary to use the
+   * Non-null assertion operator when working with external libraries or
+   * APIs that offer limited TypeScript compatibility, minimizing the
+   * requirement for extensive null-checking or type-guarding. This feature
+   * can also be advantageous in test scenarios for asserting non-null
+   * values, leading to more streamlined test code. By permitting the use of
+   * this operator when suitable, developers are empowered to make
+   * well-informed choices while upholding best practices.
    */
   '@typescript-eslint/no-non-null-assertion': 'off',
   '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
 };
 
-module.exports = { essentialTypeScriptRules, extraTypeScriptRules };
+module.exports = { level1, level2, level3 };

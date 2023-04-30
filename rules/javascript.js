@@ -3,7 +3,7 @@
  */
 const level0 = {
   //----------------------------------------------------------------------------
-  // Fixes conflicts between different ESLint configurations
+  // Resolves conflicts among various ESLint configurations.
   //----------------------------------------------------------------------------
 
   /**
@@ -21,7 +21,7 @@ const level0 = {
 
 const level1 = {
   //----------------------------------------------------------------------------
-  // Fixes conflicts between different ESLint configurations
+  // Resolves conflicts among various ESLint configurations.
   //----------------------------------------------------------------------------
 
   /**
@@ -33,16 +33,6 @@ const level1 = {
    * @see {@link https://github.com/prettier/eslint-plugin-prettier#options}
    */
   'prettier/prettier': ['error', { singleQuote: true }],
-
-  /**
-   * A multitude of abbreviations are widely recognized among developers.
-   * The task of maintaining consistent naming goes beyond merely avoiding
-   * familiar abbreviations. Introducing a rule to carve out an exception
-   * solely for React 'props' appears to be an imbalanced approach, as it
-   * focuses on a single case instead of addressing more comprehensive
-   * naming practices.
-   */
-  'unicorn/prevent-abbreviations': 'off',
 };
 
 const level2 = {
@@ -59,6 +49,31 @@ const level2 = {
       argsIgnorePattern: '^_',
     },
   ],
+
+  /**
+   * Relocating a file to a different folder may necessitate updating all
+   * import statements within that file. However, this issue can be avoided
+   * by using absolute import paths. This ESLint rule assists in ensuring
+   * that absolute import paths are consistently implemented.
+   */
+  'no-relative-import-paths/no-relative-import-paths': [
+    'error',
+    { allowSameFolder: false, rootDir: '/', prefix: '@' },
+  ],
+
+  //----------------------------------------------------------------------------
+  // Resolves conflicts among various ESLint configurations.
+  //----------------------------------------------------------------------------
+
+  /**
+   * A multitude of abbreviations are widely recognized among developers.
+   * The task of maintaining consistent naming goes beyond merely avoiding
+   * familiar abbreviations. Introducing a rule to carve out an exception
+   * solely for React 'props' appears to be an imbalanced approach, as it
+   * focuses on a single case instead of addressing more comprehensive
+   * naming practices.
+   */
+  'unicorn/prevent-abbreviations': 'off',
 };
 
 const level3 = {
@@ -83,17 +98,6 @@ const level3 = {
   'unicorn/no-useless-undefined': 'off',
 
   /**
-   * Relocating a file to a different folder may necessitate updating all
-   * import statements within that file. However, this issue can be avoided
-   * by using absolute import paths. This ESLint rule assists in ensuring
-   * that absolute import paths are consistently implemented.
-   */
-  'no-relative-import-paths/no-relative-import-paths': [
-    'error',
-    { allowSameFolder: false, rootDir: '/', prefix: '@' },
-  ],
-
-  /**
    * Rules that impose limitations on syntax usage go beyond the purview of
    * ESLint. We hold the view that certain decisions should be made by
    * developers themselves, rather than constraining their choices. If any
@@ -101,10 +105,8 @@ const level3 = {
    * your project's settings.
    */
   'no-restricted-syntax': 'off',
-  'no-param-reassign': 'off',
   'no-restricted-exports': 'off',
   'no-plusplus': 'off',
-  'unicorn/no-array-reduce': 'off',
   'import/prefer-default-export': 'off',
 };
 
