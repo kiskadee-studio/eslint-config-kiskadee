@@ -58,7 +58,7 @@ const level2 = {
    */
   'no-relative-import-paths/no-relative-import-paths': [
     'error',
-    { allowSameFolder: false, rootDir: '/', prefix: '@' },
+    { allowSameFolder: true, rootDir: '/', prefix: '@' },
   ],
 
   //----------------------------------------------------------------------------
