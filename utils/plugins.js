@@ -31,8 +31,8 @@ module.exports = {
 
   /**
    * Package names: eslint-plugin-prettier eslint-config-prettier
-   * @see {@link https://github.com/prettier/eslint-plugin-prettier}
-   * @see {@link https://github.com/prettier/eslint-config-prettier}
+   * @see {@link https://github.com/prettier/eslint-plugin-prettier#recommended-configuration}
+   * @see {https://github.com/prettier/eslint-config-prettier#installation}
    */
   prettier: 'plugin:prettier/recommended',
 
