@@ -54,7 +54,7 @@ module.exports = (level, rules) => {
 
         plugins:
           level > 1
-            ? ['unused-imports', 'no-relative-import-paths']
+            ? [plugins.unusedImports, plugins.noRelativeImportPaths]
             : undefined,
 
         rules: {

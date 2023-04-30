@@ -5,32 +5,74 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 ## Installation
 
 ```bash
-    npm install -D eslint-config-kiskadee eslint typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-config-airbnb eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths prettier
+    npm install -D eslint eslint-config-kiskadee
 ```
 
-## Level 1 - Essential Rules
+## [Level 1] Node / JavaScript - Essential Rules
 
-- TypeScript Plugin (recommended rules)
-- Airbnb Style Guide (recommended rules)
-  - JavaScript
-  - React Plugin
-  - React Hooks Plugin
-  - Imports Plugin
-  - jsx-a11y Plugin
-- Jest Plugin (recommended rules)
-- Prettier
+- Airbnb: JavaScript Style Guide
+  - JavaScript Plugin (eslint-config-airbnb)
+  - Import Plugin (eslint-plugin-import)
+- TypeScript Support
+  - TypeScript Plugin (typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin)
+  - Fixed conflicts with ESLint rules (eslint-config-kiskadee)
+- Prettier Support
+  - Prettier Plugin (prettier eslint-plugin-prettier)
+  - Fixed conflicts with ESLint rules (eslint-config-prettier)
+- Jest Plugin (jest eslint-plugin-jest)
+
+```bash
+    npm install -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
+```
+
+```javascript
+    // .eslintrc.js
+    module.exports = {
+      extends: ['kiskadee/node-level-1'],
+      rules: {
+        // your rules
+      },
+    };
+```
 
 ## Level 2 - Great Rules
 
 - All from Essential
-- Unicorn Plugin (recommended rules)
-- Unused Imports Plugin
-- No Relative Import Paths Plugin
+- Unicorn Plugin (eslint-plugin-unicorn)
+  - More than 100 powerful ESLint rules
+- Unused Imports Plugin (eslint-plugin-unused-imports)
+  - Finds and removes unused ES6 module imports
+- No Relative Import Paths Plugin (eslint-plugin-no-relative-import-paths)
+  - Enforces the use of absolute import paths
+
+```bash
+    npm install -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
+```
+
+```javascript
+    // .eslintrc.js
+    module.exports = {
+      extends: ['kiskadee/node-level-2'],
+      rules: {
+        // your rules
+      },
+    };
+```
 
 ## Level 3 - Kiskadee Rules
 
 - All from Great
-- Some rules modified 🤩
+- Some fantastic rules modified
+
+```javascript
+    // .eslintrc.js
+    module.exports = {
+      extends: ['kiskadee/node-level-3'],
+      rules: {
+        // your rules
+      },
+    };
+```
 
 Suggest a rule to be changed or added or plugin to be added
 
