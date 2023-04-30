@@ -13,4 +13,4 @@ const {
 module.exports = config(3, {
   js: { ...jsLevel1, ...jsLevel2, ...jsLevel3 },
   ts: { ...tsLevel1, ...tsLevel2, ...tsLevel3 },
-})
+});
