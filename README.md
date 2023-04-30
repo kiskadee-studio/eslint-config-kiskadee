@@ -37,7 +37,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 
 ## Level 2 - Great Rules
 
-- All from Essential
+- All items from level 1
 - Unicorn Plugin (eslint-plugin-unicorn)
   - More than 100 powerful ESLint rules
 - Unused Imports Plugin (eslint-plugin-unused-imports)
@@ -61,8 +61,8 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 
 ## Level 3 - Kiskadee Rules
 
-- All from Great
-- Some fantastic rules modified
+- All items from level 2
+- A selection of outstanding rules we've recommended, derived from existing plugins
 
 ```javascript
     // .eslintrc.js
