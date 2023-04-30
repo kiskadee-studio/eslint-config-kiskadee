@@ -1,18 +1,25 @@
-const essentialJavaScriptRules = {
-  /**
-   * Remove unused imports
-   */
-  'unused-imports/no-unused-imports': 'error',
-  'unused-imports/no-unused-vars': [
-    'warn',
-    {
-      vars: 'all',
-      varsIgnorePattern: '^_',
-      args: 'after-used',
-      argsIgnorePattern: '^_',
-    },
-  ],
+/**
+ * Used just for JavaScript files
+ */
+const level0 = {
+  //----------------------------------------------------------------------------
+  // Fixes conflicts between different ESLint configurations
+  //----------------------------------------------------------------------------
 
+  /**
+   * The "unused-imports/no-unused-vars" plugin needs to disable this
+   * rule in order to successfully remove unused imports.
+   */
+  'no-unused-vars': 'off',
+
+  /**
+   * Adopting JavaScript modules (ESM) is not applicable for general
+   * configuration files.
+   */
+  'unicorn/prefer-module': 'off',
+};
+
+const level1 = {
   //----------------------------------------------------------------------------
   // Fixes conflicts between different ESLint configurations
   //----------------------------------------------------------------------------
@@ -38,25 +45,23 @@ const essentialJavaScriptRules = {
   'unicorn/prevent-abbreviations': 'off',
 };
 
-const essentialJavaScriptOnlyRules = {
-  //----------------------------------------------------------------------------
-  // Fixes conflicts between different ESLint configurations
-  //----------------------------------------------------------------------------
-
+const level2 = {
   /**
-   * The "unused-imports/no-unused-vars" plugin needs to disable this
-   * rule in order to successfully remove unused imports.
+   * Remove unused imports
    */
-  'no-unused-vars': 'off',
-
-  /**
-   * Adopting JavaScript modules (ESM) is not applicable for general
-   * configuration files.
-   */
-  'unicorn/prefer-module': 'off',
+  'unused-imports/no-unused-imports': 'error',
+  'unused-imports/no-unused-vars': [
+    'warn',
+    {
+      vars: 'all',
+      varsIgnorePattern: '^_',
+      args: 'after-used',
+      argsIgnorePattern: '^_',
+    },
+  ],
 };
 
-const extraJavaScriptRules = {
+const level3 = {
   /**
    * Restricting the number of lines in a file promotes improved code
    * organization. A file with an excessive number of lines could suggest
@@ -103,8 +108,4 @@ const extraJavaScriptRules = {
   'import/prefer-default-export': 'off',
 };
 
-module.exports = {
-  essentialJavaScriptRules,
-  essentialJavaScriptOnlyRules,
-  extraJavaScriptRules,
-};
+module.exports = { level0, level1, level2, level3 };

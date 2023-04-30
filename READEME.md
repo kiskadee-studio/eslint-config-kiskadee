@@ -8,7 +8,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
     npm install -D eslint-config-kiskadee eslint typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-config-airbnb eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths prettier
 ```
 
-## Essential Rules
+## Level 1 - Essential Rules
 
 - TypeScript Plugin (recommended rules)
 - Airbnb Style Guide (recommended rules)
@@ -20,14 +20,14 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 - Jest Plugin (recommended rules)
 - Prettier
 
-## Great Rules
+## Level 2 - Great Rules
 
 - All from Essential
 - Unicorn Plugin (recommended rules)
 - Unused Imports Plugin
 - No Relative Import Paths Plugin
 
-## Default Rules
+## Level 3 - Kiskadee Rules
 
 - All from Great
 - Some rules modified 🤩

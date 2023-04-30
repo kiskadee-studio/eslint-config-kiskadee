@@ -1,15 +1,11 @@
-const {
-  essentialJavaScriptRules,
-  essentialJavaScriptOnlyRules,
-} = require('./rules/javascript');
-const { essentialTypeScriptRules } = require('./rules/typescript');
-const { extraReactRules } = require('./rules/react');
+const { level0: jsOnly } = require('./rules/javascript');
+const plugins = require('./plugins');
 
-module.exports = (
-  extraJavaScriptRules,
-  extraTypeScriptRules,
-  essentialReactRules
-) => {
+module.exports = (configs) => {
+  const jsRules = configs?.js?.rules;
+  const tsRules = configs?.ts?.rules;
+  const reactRules = configs?.react?.rules;
+
   return {
     //--------------------------------------------------------------------------
     // Node (.js) ESLint Configurations
@@ -23,131 +19,87 @@ module.exports = (
     root: true,
 
     extends: [
-      /**
-       * @see {@link https://www.npmjs.com/package/eslint-config-airbnb-base}
-       */
-      'airbnb-base',
-
-      /**
-       * @see {@link https://github.com/sindresorhus/eslint-plugin-unicorn}
-       */
-      'plugin:unicorn/recommended',
-
-      /**
-       * @see {@link https://github.com/prettier/eslint-plugin-prettier}
-       */
-      'plugin:prettier/recommended',
+      plugins.javaScript,
+      plugins.unicorn,
+      plugins.jest,
+      plugins.prettier,
     ],
 
-    rules: {
-      ...essentialJavaScriptRules,
-      ...essentialJavaScriptOnlyRules,
-      ...extraJavaScriptRules,
-    },
+    rules: { ...jsRules, ...jsOnly },
 
     //--------------------------------------------------------------------------
     // TypeScript (.ts, .tsx) ESLint Configurations
     //--------------------------------------------------------------------------
 
-    overrides: [
-      {
-        files: ['**/*.ts', '**/*.tsx'],
+    ...(configs?.ts
+      ? {
+          overrides: [
+            {
+              files: ['**/*.ts', '**/*.tsx'],
 
-        env: {
-          browser: true,
-          es2022: true,
-          jest: true,
-          node: true,
-        },
+              env: {
+                browser: true,
+                es2022: true,
+                jest: true,
+                node: true,
+              },
 
-        parser: '@typescript-eslint/parser',
+              parser: '@typescript-eslint/parser',
 
-        parserOptions: {
-          ecmaFeatures: {
-            jsx: true,
-          },
-          ecmaVersion: 'latest',
-          sourceType: 'module',
-          project: ['./tsconfig.json'],
-        },
+              parserOptions: {
+                ecmaFeatures: {
+                  jsx: true,
+                },
+                ecmaVersion: 'latest',
+                sourceType: 'module',
+                project: ['./tsconfig.json'],
+              },
 
-        extends: [
-          //--------------------------------------------------------------------
-          // JavaScript and React
-          //--------------------------------------------------------------------
+              extends: [
+                ...(configs.react ? plugins.react : plugins.javaScript),
+                ...plugins.unicorn,
+                ...plugins.jest,
+                ...plugins.typescript,
+                ...plugins.importTypescript,
+                ...plugins.prettier,
+              ],
 
-          /**
-           * @see {@link https://www.npmjs.com/package/eslint-config-airbnb}
-           */
-          'airbnb',
-          'airbnb/hooks',
+              ...(configs?.ts?.level > 1
+                ? { plugins: ['unused-imports', 'no-relative-import-paths'] }
+                : undefined),
 
-          /**
-           * @see {@link https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config}
-           */
-          'plugin:unicorn/recommended',
+              rules: {
+                ...jsRules,
+                ...tsRules,
+              },
+            },
 
-          //--------------------------------------------------------------------
-          // Jest
-          //--------------------------------------------------------------------
+            //------------------------------------------------------------------
+            // React (.tsx) ESLint Configurations
+            //------------------------------------------------------------------
 
-          /**
-           * @see {@link https://www.npmjs.com/package/eslint-plugin-jest-dom}
-           */
-          'plugin:jest-dom/recommended',
+            ...(configs?.react
+              ? {
+                  files: ['**/*.tsx'],
+                  rules: reactRules,
+                }
+              : undefined),
+          ],
+        }
+      : undefined),
 
-          //--------------------------------------------------------------------
-          // TypeScript
-          //--------------------------------------------------------------------
-
-          /**
-           * @see {@link https://typescript-eslint.io/getting-started}
-           */
-          'plugin:@typescript-eslint/recommended',
-
-          /**
-           * @see {@link https://github.com/import-js/eslint-plugin-import#typescript}
-           */
-          'plugin:import/typescript',
-
-          //--------------------------------------------------------------------
-          // Prettier
-          //--------------------------------------------------------------------
-
-          'plugin:prettier/recommended',
-        ],
-
-        plugins: ['unused-imports', 'no-relative-import-paths'],
-
-        rules: {
-          ...essentialJavaScriptRules,
-          ...extraJavaScriptRules,
-
-          ...essentialTypeScriptRules,
-          ...extraTypeScriptRules,
-        },
-      },
-
-      //------------------------------------------------------------------------
-      // React (.tsx) ESLint Configurations
-      //------------------------------------------------------------------------
-
-      {
-        files: ['**/*.tsx'],
-        rules: {
-          ...essentialReactRules,
-          ...extraReactRules,
-        },
-      },
-    ],
     settings: {
-      /**
-       * @see {@link https://github.com/import-js/eslint-plugin-import#typescript}
-       */
-      'import/resolver': {
-        typescript: true,
-        node: true,
-      },
+      ...(configs.ts
+        ? {
+            /**
+             * @see {@link https://github.com/import-js/eslint-plugin-import#typescript}
+             */
+            'import/resolver': {
+              typescript: true,
+              node: true,
+            },
+          }
+        : undefined),
     },
   };
 };
