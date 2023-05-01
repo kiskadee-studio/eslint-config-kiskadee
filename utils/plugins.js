@@ -59,16 +59,4 @@ module.exports = {
    * @see {https://github.com/testing-library/eslint-plugin-testing-library#react}
    */
   testingLibraryReact: 'plugin:testing-library/react',
-
-  /**
-   * Package name: eslint-plugin-testing-library
-   * @see {https://github.com/testing-library/eslint-plugin-testing-library#vue}
-   */
-  testingLibraryVue: 'plugin:testing-library/vue',
-
-  /**
-   * Package name: eslint-plugin-testing-library
-   * @see {https://github.com/testing-library/eslint-plugin-testing-library#angular}
-   */
-  testingLibraryAngular: 'plugin:testing-library/angular',
 };
