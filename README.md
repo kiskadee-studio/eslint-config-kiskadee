@@ -43,10 +43,9 @@ With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects bec
 
 #### Usage
 
-Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and add the following content:
+Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-1`:
 
 ```javascript
-    // .eslintrc.js
     module.exports = {
       extends: ['kiskadee/node-level-1'],
       rules: {
