@@ -35,6 +35,8 @@ With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects bec
 - 🧰 **Jest Support**
   - *Jest Plugin ([jest](https://github.com/jestjs/jest#getting-started) [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#recommended))*
 
+#### Installation
+
 ```bash
   npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
 ```
@@ -62,6 +64,10 @@ Create a `.eslintrc.js` ([or equivalent](https://eslint.org/docs/latest/use/conf
   - _Finds and removes unused ES6 module imports_
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
   - _Enforces the use of absolute import paths_
+
+#### Installation
+
+After installing the dependencies for level 1, proceed to install:
 
 ```bash
   npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
