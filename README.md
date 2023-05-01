@@ -55,6 +55,7 @@ Create a `.eslintrc.js` ([or equivalent](https://eslint.org/docs/latest/use/conf
     };
 ```
 
+> **Note:** As we use TypeScript by default at all levels, you should have a `tsconfig.json` file at the root of your project for the ESLint plugin for TypeScript to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
 ### 📖 Great JavaScript Rules - Level 2
 
 - 🔥 **All items from level 1**
