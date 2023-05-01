@@ -6,7 +6,7 @@ Having these tools pre-configured and easily integrated into your projects means
 
 ## Installation
 
-First, let's install ESLint and Kiskadee:
+First, let's install `ESLint` and `Kiskadee`:
 
 ```bash
   npm i -D eslint eslint-config-kiskadee
