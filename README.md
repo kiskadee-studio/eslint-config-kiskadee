@@ -1,4 +1,3 @@
-
 # Description
 
 This ESLint configuration is the ultimate choice for developers who use ESLint, Airbnb Style Guide, React, React Hooks, Prettier, TypeScript, and Unicorn in their projects. It's designed to ensure adherence to best practices, proper code formatting, and high levels of code security and quality. With this configuration, you'll get the most optimal combination of features for improving code quality in React applications with TypeScript support, all while benefiting from the added security provided by the Unicorn rule set.
@@ -14,11 +13,11 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 ### 📖 Essential JavaScript Rules - Level 1
 
 - 🧰 **Airbnb: JavaScript Style Guide**
-  - *JavaScript Plugin ([eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base))*
+  - _JavaScript Plugin ([eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base))_
   - *Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))*
 - 🧰 **TypeScript Support**
   - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
-  - *Fixed conflicts with ESLint rules (eslint-config-kiskadee)*
+  - *Addressed conflicts among different ESLint rules (eslint-config-kiskadee [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
 - 🧰 **Prettier Support**
   - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
   - Fixed conflicts with ESLint rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))
@@ -43,11 +42,11 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 
 - 🔥 **All items from level 1**
 - 🧰 **Unicorn Plugin** ([eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config))
-  - More than 100 powerful ESLint rules
+  - _More than 100 powerful ESLint rules_
 - 🧰 **Unused Imports Plugin** ([eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports#usage))
-  - Finds and removes unused ES6 module imports
+  - _Finds and removes unused ES6 module imports_
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
-  - Enforces the use of absolute import paths
+  - _Enforces the use of absolute import paths_
 
 ```bash
   npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
@@ -85,19 +84,24 @@ Suggest a rule to be changed or added or plugin to be added
 ### 📖 Essential React Rules - Level 1
 
 - 🧰 **Airbnb: React Style Guide**
-  - *React and JavaScript Plugin ([eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base))*
-  - React Plugin ([eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react))
-  - React Hooks Plugin ([eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks))
-  - *Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))*
+
+  - _React and JavaScript Plugin ([eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base))_
+  - _React Plugin ([eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react))_
+  - _React Hooks Plugin ([eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks))_
+  - _Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))_
   - JSX Accessibility Plugin ([eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y))
 - 🧰 **TypeScript Support**
-  - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
-  - *Fixed conflicts with ESLint rules (eslint-config-kiskadee)*
+
+  - _TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))_
+  - *Addressed conflicts among different ESLint rules (eslint-config-kiskadee [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
 - 🧰 **Prettier Support**
+
   - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
   - Fixed conflicts with ESLint rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))
 - 🧰 **Jest Support**
-  - *Jest Plugin ([jest](https://github.com/jestjs/jest#getting-started) [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#recommended))*
+
+  - _Jest Plugin ([jest](https://github.com/jestjs/jest#getting-started) [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#recommended))_
+  - *Testing Library for React ([eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library#react))*
 
 ```bash
   npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
@@ -117,11 +121,11 @@ Suggest a rule to be changed or added or plugin to be added
 
 - 🔥 **All items from level 1**
 - 🧰 **Unicorn Plugin** ([eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config))
-- More than 100 powerful ESLint rules
+  - _More than 100 powerful ESLint rules_
 - 🧰 **Unused Imports Plugin** ([eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports#usage))
-- Finds and removes unused ES6 module imports
+  - _Finds and removes unused ES6 module imports_
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
-- Enforces the use of absolute import paths
+  - _Enforces the use of absolute import paths_
 
 ```bash
 npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
