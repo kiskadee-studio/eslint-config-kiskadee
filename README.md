@@ -20,7 +20,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
   - *Fixed conflicts among different rules (eslint-config-kiskadee [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
 - 🧰 **Prettier Support**
   - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
-  - Fixed conflicts with ESLint rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))
+  - *Fixed conflicts among different rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))*
 - 🧰 **Jest Support**
   - *Jest Plugin ([jest](https://github.com/jestjs/jest#getting-started) [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#recommended))*
 
@@ -97,7 +97,7 @@ Suggest a rule to be changed or added or plugin to be added
 - 🧰 **Prettier Support**
 
   - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
-  - Fixed conflicts with ESLint rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))
+  - *Fixed conflicts among different rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))*
 - 🧰 **Jest Support**
 
   - _Jest Plugin ([jest](https://github.com/jestjs/jest#getting-started) [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#recommended))_
