@@ -17,7 +17,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
   - *Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))*
 - 🧰 **TypeScript Support**
   - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
-  - *Addressed conflicts among different ESLint rules (eslint-config-kiskadee [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
+  - *Fixed conflicts among different rules (eslint-config-kiskadee [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
 - 🧰 **Prettier Support**
   - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
   - Fixed conflicts with ESLint rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))
@@ -93,7 +93,7 @@ Suggest a rule to be changed or added or plugin to be added
 - 🧰 **TypeScript Support**
 
   - _TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))_
-  - *Addressed conflicts among different ESLint rules (eslint-config-kiskadee [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
+  - *Fixed conflicts among different rules (eslint-config-kiskadee [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
 - 🧰 **Prettier Support**
 
   - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
