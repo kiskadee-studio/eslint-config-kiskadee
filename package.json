@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-kiskadee",
   "version": "1.0.0",
-  "description": "Definitive ESLint config for ESLint, Airbnb Style Guide, React, React Hooks, Prettier, TypeScript, Unicorn and more",
+  "description": "Definitive ESLint config for ESLint, Airbnb Style Guide, React, Vue, Angular, Prettier, TypeScript, Unicorn and more",
   "main": "index.js",
   "files": [
     "index.js",
