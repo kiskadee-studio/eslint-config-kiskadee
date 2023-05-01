@@ -6,15 +6,15 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
 ## Installation
 
 ```bash
-    npm i -D eslint eslint-config-kiskadee
+  npm i -D eslint eslint-config-kiskadee
 ```
 
-## 🔧 ESLint Setup for JavaScript / Node
+## 🔧 ESLint Setup for JavaScript (or Node)
 
-### 📖 Essential Rules - Level 1
+### 📖 Essential JavaScript Rules - Level 1
 
 - 🧰 **Airbnb: JavaScript Style Guide**
-  - *JavaScript Plugin ([eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base))*
+  - *JavaScript Plugin ([eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base))*
   - *Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))*
 - 🧰 **TypeScript Support**
   - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
@@ -26,7 +26,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
   - *Jest Plugin ([jest](https://github.com/jestjs/jest#getting-started) [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#recommended))*
 
 ```bash
-    npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
+  npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
 ```
 
 ```javascript
@@ -39,7 +39,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
     };
 ```
 
-### 📖 Great Rules - Level 2
+### 📖 Great JavaScript Rules - Level 2
 
 - 🔥 **All items from level 1**
 - 🧰 **Unicorn Plugin** ([eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config))
@@ -50,7 +50,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
   - Enforces the use of absolute import paths
 
 ```bash
-    npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
+  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
 ```
 
 ```javascript
@@ -63,7 +63,7 @@ This ESLint configuration is the ultimate choice for developers who use ESLint, 
     };
 ```
 
-### 📖 Kiskadee Rules - Level 3
+### 📖 Kiskadee JavaScript Rules - Level 3
 
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
@@ -82,11 +82,14 @@ Suggest a rule to be changed or added or plugin to be added
 
 # 🔧 ESLint Setup for React
 
-### 📖 Essential Rules - Level 1
+### 📖 Essential React Rules - Level 1
 
 - 🧰 **Airbnb: React Style Guide**
-  - *JavaScript Plugin ([eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base))*
+  - *React and JavaScript Plugin ([eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base))*
+  - React Plugin ([eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react))
+  - React Hooks Plugin ([eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks))
   - *Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))*
+  - JSX Accessibility Plugin ([eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y))
 - 🧰 **TypeScript Support**
   - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
   - *Fixed conflicts with ESLint rules (eslint-config-kiskadee)*
@@ -97,44 +100,44 @@ Suggest a rule to be changed or added or plugin to be added
   - *Jest Plugin ([jest](https://github.com/jestjs/jest#getting-started) [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#recommended))*
 
 ```bash
-    npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
+  npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
 ```
 
 ```javascript
     // .eslintrc.js
     module.exports = {
-      extends: ['kiskadee/node-level-1'],
+      extends: ['kiskadee/react-level-1'],
       rules: {
         // your rules
       },
     };
 ```
 
-### 📖 Great Rules - Level 2
+### 📖 Great React Rules - Level 2
 
 - 🔥 **All items from level 1**
 - 🧰 **Unicorn Plugin** ([eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config))
-  - More than 100 powerful ESLint rules
+- More than 100 powerful ESLint rules
 - 🧰 **Unused Imports Plugin** ([eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports#usage))
-  - Finds and removes unused ES6 module imports
+- Finds and removes unused ES6 module imports
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
-  - Enforces the use of absolute import paths
+- Enforces the use of absolute import paths
 
 ```bash
-    npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
+npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
 ```
 
 ```javascript
     // .eslintrc.js
     module.exports = {
-      extends: ['kiskadee/node-level-2'],
+      extends: ['kiskadee/react-level-2'],
       rules: {
         // your rules
       },
     };
 ```
 
-### 📖 Kiskadee Rules - Level 3
+### 📖 Kiskadee React Rules - Level 3
 
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
@@ -142,7 +145,7 @@ Suggest a rule to be changed or added or plugin to be added
 ```javascript
     // .eslintrc.js
     module.exports = {
-      extends: ['kiskadee/node-level-3'],
+      extends: ['kiskadee/react-level-3'],
       rules: {
         // your rules
       },
@@ -165,13 +168,13 @@ Though Prettier excels at standardizing many code formatting aspects, the .edito
 Create a .editorconfig file in the project root with the following content:
 
 ```bash
-  root = true
+root = true
 
-  [*]
-  charset = utf-8
-  indent_style = space
-  indent_size = 2
-  end_of_line = lf
-  insert_final_newline = true
-  trim_trailing_whitespace = true
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
 ```
