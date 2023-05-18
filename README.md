@@ -100,7 +100,7 @@ After installing the dependencies for level 1, proceed to install:
 
 Suggest a rule to be changed or added or plugin to be added
 
-# 🔧 ESLint Setup for React
+# 🔧 ESLint Setup for React / React Native
 
 ### 📖 Essential React Rules - Level 1
 
@@ -125,13 +125,18 @@ Suggest a rule to be changed or added or plugin to be added
   - *Testing Library for React ([eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library#react))*
 
 ```bash
-  npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest
+  npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier jest eslint-plugin-jest eslint-plugin-testing-library
+```
+
+If you are using React Native, install this complementary dependency:
+```bash
+  npm i -D @react-native/eslint-plugin
 ```
 
 ```javascript
     // .eslintrc.js
     module.exports = {
-      extends: ['kiskadee/react-level-1'],
+      extends: ['kiskadee/react-level-1'], // ['kiskadee/react-native-level-1'] for React Native projects
       rules: {
         // your rules
       },
