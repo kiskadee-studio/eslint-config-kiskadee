@@ -12,7 +12,7 @@ First, let's install `ESLint` and `Kiskadee`:
   npm i -D eslint eslint-config-kiskadee
 ```
 
-Kiskadee handles three levels of ESLint configuration for each type of project, be it **JavaScript** / **Node** or **React**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
+Kiskadee handles three levels of ESLint configuration for each type of project, be it **JavaScript**/**Node**, **React** or **React Native**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
 
 - **Level 1** of Kiskadee provides a solid foundation that uses the recommended settings of each respective plugin for [TypeScript](https://typescript-eslint.io/getting-started/#step-2-configuration), [Airbnb's JavaScript Style Guide](https://www.npmjs.com/package/eslint-config-airbnb-base), and [Prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration). This level is perfect for starting projects with the basics, allowing you to later [configure rules](https://eslint.org/docs/latest/use/configure/rules) to your liking and add other plugins.
 - **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
