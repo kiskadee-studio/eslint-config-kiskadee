@@ -14,10 +14,11 @@ First, let's install `ESLint` and `Kiskadee`:
 
 Kiskadee handles three levels of ESLint configuration for each type of project, be it **JavaScript** / **Node** or **React**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
 
-1. **At level 1**, Kiskadee provides a solid foundation with recommended settings for **TypeScript**, **Airbnb's JavaScript Style Guide**, and **Prettier**. This level is perfect for starting projects or those that require essential rules.
-2. **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
-3. **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, promoting **harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
-   With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects becomes a breeze, as it offers different levels of configuration to cater to your project's specific needs.
+- **Level 1** of Kiskadee provides a solid foundation that uses the recommended settings of each respective plugin for [TypeScript](https://typescript-eslint.io/getting-started/#step-2-configuration), [Airbnb's JavaScript Style Guide](https://www.npmjs.com/package/eslint-config-airbnb-base), and [Prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration). This level is perfect for starting projects with the basics, allowing you to later [configure rules](https://eslint.org/docs/latest/use/configure/rules) to your liking and add other plugins.
+- **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
+- **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, promoting **harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
+
+With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects becomes a breeze, as it offers different levels of configuration to cater to your project's specific needs.
 
 ## 🔧 ESLint Setup for JavaScript
 
@@ -68,7 +69,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 
 #### Installation for JavaScript
 
-After installing the dependencies for level 1, install:
+After installing the dependencies for level 1, then install:
 
 ```bash
   npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
