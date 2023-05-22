@@ -15,7 +15,7 @@ module.exports = (level, rules) => {
     extends: [
       plugins.javaScriptAirbnb,
       plugins.unicorn,
-      plugins.jest,
+      plugins.vitest,
       plugins.prettier,
     ],
 
@@ -47,7 +47,7 @@ module.exports = (level, rules) => {
           plugins.unicorn,
           plugins.typescript,
           plugins.importTypescript,
-          plugins.jest,
+          plugins.vitest,
           rules.react ? plugins.testingLibraryReact : undefined,
           plugins.prettier,
         ].filter(Boolean),
@@ -69,7 +69,8 @@ module.exports = (level, rules) => {
 
       {
         files: ['**/*.tsx'],
-        rules: rules.react ?? undefined,
+        plugins: rules.reactNative ? [plugins.reactNative] : undefined,
+        rules: { ...rules.react, ...rules.reactNative } ?? undefined,
       },
     ],
 

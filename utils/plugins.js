@@ -37,10 +37,10 @@ module.exports = {
   prettier: 'plugin:prettier/recommended',
 
   /**
-   * Package name: eslint-plugin-jest
-   * @see {https://github.com/jest-community/eslint-plugin-jest#recommended}
+   * Package name: eslint-plugin-vitest
+   * @see {https://github.com/veritem/eslint-plugin-vitest#recommended}
    */
-  jest: 'plugin:jest/recommended',
+  vitest: 'plugin:vitest/recommended',
 
   /**
    * Package name: eslint-plugin-unused-imports
@@ -59,4 +59,10 @@ module.exports = {
    * @see {https://github.com/testing-library/eslint-plugin-testing-library#react}
    */
   testingLibraryReact: 'plugin:testing-library/react',
+
+  /**
+   * Package name: @react-native/eslint-plugin
+   * @see {https://github.com/facebook/react-native/tree/main/packages/eslint-plugin-react-native#usage}
+   */
+  reactNative: '@react-native',
 };
