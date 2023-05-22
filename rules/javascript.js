@@ -1,5 +1,5 @@
 /**
- * Used just for JavaScript files
+ * Used just for JavaScript files, not TypeScript
  */
 const level0 = {
   //----------------------------------------------------------------------------

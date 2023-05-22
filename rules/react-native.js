@@ -1,4 +1,6 @@
-const level1 = {};
+const level1 = {
+  'react-native/no-inline-styles': 'warn',
+};
 
 const level2 = {};
 
