@@ -221,3 +221,5 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 ```
+
+> For Windows users: you may encounter problems when trying to change the line ending in Git. If this happens, try following [these steps](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
