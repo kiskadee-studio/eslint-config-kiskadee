@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Definitive ESLint config for ESLint, Airbnb Style Guide, React, Prettier, TypeScript, Unicorn and more",
   "main": "index.js",
+  "test": "echo 0",
   "files": [
     "node-level-1.js",
     "node-level-2.js",
