@@ -1,4 +1,4 @@
-Description
+## Description
 
 Utilizing ESLint, Prettier, and TypeScript together in your projects brings a powerful combination of benefits that enhance code quality, readability, and developer productivity. ESLint enforces best practices and catches potential errors early, while Prettier automatically formats your code for improved readability and consistency. TypeScript adds robust type-checking capabilities, further improving the reliability and maintainability of your codebase.
 
@@ -20,7 +20,8 @@ Kiskadee handles three levels of ESLint configuration for each type of project, 
 
 With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects becomes a breeze, as it offers different levels of configuration to cater to your project's specific needs.
 
-## 🔧 ESLint Setup for JavaScript
+
+## 🔧 ESLint Setup for JavaScript / Node
 
 ### 📖 Essential JavaScript Rules - Level 1
 
@@ -103,6 +104,7 @@ After installing the dependencies for level 1, then install:
 ```
 
 > Don't hesitate to start a new issue with suggestions for new plugins or a specific configuration for any of the plugins we already have.
+
 
 # 🔧 ESLint Setup for React
 
@@ -196,6 +198,7 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-rel
 ```
 
 > Don't hesitate to start a new issue with suggestions for new plugins or a specific configuration for any of the plugins we already have.
+
 
 ## .editorconfig
 
