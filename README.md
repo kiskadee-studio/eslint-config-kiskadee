@@ -18,7 +18,7 @@ Kiskadee handles three levels of ESLint configuration for each type of project, 
 - **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
 - **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, promoting **harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
 
-In summary, level 1 uses only essential plugins, level 2 includes some additional plugins, and both adhere to the rules recommended by the creators. Level 3 has the same plugins as level 2 but with some modified rules.
+In summary, **level 1** uses only essential plugins, **level 2** includes some additional plugins, and both adhere to the rules recommended by the creators. **Level 3** has the same plugins as level 2 but with some modified rules.
 
 With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects becomes a breeze, as it offers different levels of configuration to cater to your project's specific needs.
 
