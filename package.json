@@ -29,6 +29,10 @@
     "jsx-a11y"
   ],
   "author": "Rodrigo José Carvalho de Mello",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiskadee-studio/eslint-config-kiskadee.git"
+  },
   "license": "ISC",
   "dependencies": {
     "@react-native/eslint-plugin": "^0.73.0",
