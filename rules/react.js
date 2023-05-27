@@ -33,7 +33,6 @@ const level2 = {
   //----------------------------------------------------------------------------
   // Resolves conflicts among various ESLint configurations.
   //----------------------------------------------------------------------------
-
   /**
    * The goal is to preserve kebab-case as the standard naming
    * convention, following Unicorn's recommendation, while making an
@@ -54,9 +53,6 @@ const level2 = {
 
         // React Hooks
         '^(use)(?:[A-Z][a-z]+)+\\.ts?$',
-
-        // Typescript config
-        'setupTests.ts',
       ],
     },
   ],

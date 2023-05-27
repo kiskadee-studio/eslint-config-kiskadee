@@ -98,16 +98,21 @@ const level3 = {
   'unicorn/no-useless-undefined': 'off',
 
   /**
+   * Nesting ternary expressions can make code more difficult to understand
+   */
+  'no-nested-ternary': 'error',
+
+  /**
    * Rules that impose limitations on syntax usage go beyond the purview of
    * ESLint. We hold the view that certain decisions should be made by
    * developers themselves, rather than constraining their choices. If any
    * of these rules are significant for your project, please enable them in
    * your project's settings.
    */
-  'no-restricted-syntax': 'off',
-  'no-restricted-exports': 'off',
-  'no-plusplus': 'off',
-  'import/prefer-default-export': 'off',
+  // 'no-restricted-syntax': 'off',
+  // 'no-restricted-exports': 'off',
+  // 'no-plusplus': 'off',
+  // 'import/prefer-default-export': 'off',
 };
 
 module.exports = { level0, level1, level2, level3 };

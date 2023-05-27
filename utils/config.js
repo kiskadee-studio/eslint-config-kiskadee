@@ -3,9 +3,11 @@ const plugins = require('./plugins');
 const env = require('./env');
 
 module.exports = (level, rules) => {
+  const level2Plugins = [plugins.unusedImports, plugins.noRelativeImportPaths];
+
   return {
     //--------------------------------------------------------------------------
-    // Node (.js) ESLint Configurations
+    // JavaScript / Node (.js) ESLint Configurations
     //--------------------------------------------------------------------------
 
     env,
@@ -52,25 +54,17 @@ module.exports = (level, rules) => {
           plugins.prettier,
         ].filter(Boolean),
 
-        plugins:
-          level > 1
-            ? [plugins.unusedImports, plugins.noRelativeImportPaths]
-            : undefined,
+        plugins: [
+          ...(level > 1 ? level2Plugins : []),
+          ...(rules.reactNative ? [plugins.reactNative] : []),
+        ],
 
         rules: {
           ...rules.js,
           ...rules.ts,
+          ...rules.react,
+          ...rules.reactNative,
         },
-      },
-
-      //------------------------------------------------------------------------
-      // React (.tsx) ESLint Configurations
-      //------------------------------------------------------------------------
-
-      {
-        files: ['**/*.tsx'],
-        plugins: rules.reactNative ? [plugins.reactNative] : undefined,
-        rules: { ...rules.react, ...rules.reactNative } ?? undefined,
       },
     ],
 
