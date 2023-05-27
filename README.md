@@ -217,14 +217,16 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-rel
 
 ## .editorconfig
 
-Though Prettier excels at standardizing many code formatting aspects, the `.editorconfig` file helps maintain consistency across diverse IDEs and text editors. Some examples of the capabilities offered by EditorConfig include:
+Though ESLint and Prettier are independent tools, each serving its own purpose, they share some common features with the [editorconfig](https://editorconfig.org/). While Prettier excels at standardizing code formatting aspects, primarily for JavaScript files, the significance of the `.editorconfig` file extends beyond specific programming languages. It helps maintain consistency in coding style and formatting across different development environments, including various IDEs, text editors, and operating systems.
 
-1. Setting indentation style (spaces or tabs) and size.
-2. Controlling end-of-line (EOL) characters (LF, CR, or CRLF).
-3. Managing character encoding (e.g., UTF-8, UTF-16).
-4. Ensuring a newline is inserted at the end of a file.
-5. Specifying whether to remove trailing whitespace.
-6. These settings contribute to a consistent codebase, regardless of the IDE or text editor being used by different team members.
+Some examples of the capabilities offered by both Prettier and EditorConfig include:
+
+- Setting indentation style (spaces or tabs) and size.
+- Controlling end-of-line (EOL) characters (LF, CR, or CRLF).
+- Ensuring a newline is inserted at the end of a file.
+- Specifying whether to remove trailing whitespace.
+
+By utilizing the .editorconfig file, developers can establish a consistent code style and formatting standard that remains uniform across different IDEs, text editors, and operating systems. This promotes collaboration and enhances code readability throughout the project.
 
 Create a `.editorconfig` file in the project root with the following content:
 
@@ -240,4 +242,4 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 ```
 
-> For Windows users: you may encounter problems when trying to change the line ending in Git. If this happens, try following [these steps](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
+> **For Windows Users**: you may encounter problems when trying to change the line ending in Git. If this happens, try following [these steps](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
