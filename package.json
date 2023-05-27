@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-kiskadee",
   "version": "0.0.2",
-  "description": "Definitive ESLint config for ESLint, Airbnb Style Guide, JavaScript or React or React Native, Prettier, TypeScript, Unicorn and more",
+  "description": "Definitive ESLint configuration for JavaScript or React or React Native, Airbnb Style Guide, Prettier, TypeScript, Unicorn and more",
   "main": "index.js",
   "files": [
     "node-level-1.js",
@@ -16,14 +16,15 @@
   ],
   "keywords": [
     "eslint",
-    "airbnb",
-    "typescript",
     "prettier",
-    "unicorn",
+    "typescript",
     "react",
+    "airbnb",
+    "unicorn",
+    "vitest",
+    "jest",
     "react-native",
     "react-hooks",
-    "vitest",
     "import",
     "unused-imports",
     "jsx-a11y",
