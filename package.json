@@ -54,8 +54,5 @@
   },
   "peerDependencies": {
     "eslint": ">= 8"
-  },
-  "publishConfig": {
-    "@kiskadee-studio:registry": "https://npm.pkg.github.com"
   }
 }
