@@ -7,11 +7,11 @@ Having these tools pre-configured and easily integrated into your projects means
 ## 🗂️ Summary
 
 - [Base installation](https://github.com/kiskadee-studio/eslint-config-kiskadee#installation)
-- Kiskadee for JavaScript or Node
+- Kiskadee for JavaScript or Node:
   - [Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1)
   - [Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-javascript-rules---level-2)
   - [Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-javascript-rules---level-3)
-- Kiskadee for React or React Native
+- Kiskadee for React or React Native:
   - [Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1)
   - [Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-react-rules---level-2)
   - [Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-react-rules---level-3)
