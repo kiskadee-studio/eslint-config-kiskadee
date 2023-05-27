@@ -3,17 +3,6 @@
   "version": "0.0.21",
   "description": "Definitive ESLint configuration for JavaScript or React or React Native, Airbnb Style Guide, Prettier, TypeScript, Unicorn and more",
   "main": "index.js",
-  "files": [
-    "node-level-1.js",
-    "node-level-2.js",
-    "node-level-3.js",
-    "react-level-1.js",
-    "react-level-2.js",
-    "react-level-3.js",
-    "react-native-level-1.js",
-    "react-native-level-2.js",
-    "react-native-level-3.js"
-  ],
   "keywords": [
     "eslint",
     "prettier",
