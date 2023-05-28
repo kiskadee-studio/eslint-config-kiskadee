@@ -6,28 +6,29 @@ module.exports = (level, rules) => {
   const level2Plugins = [plugins.unusedImports, plugins.noRelativeImportPaths];
 
   return {
-    //--------------------------------------------------------------------------
-    // JavaScript / Node (.js) ESLint Configurations
-    //--------------------------------------------------------------------------
-
-    env,
-
     root: true,
-
-    extends: [
-      plugins.javaScriptAirbnb,
-      plugins.unicorn,
-      plugins.vitest,
-      plugins.prettier,
-    ],
-
-    rules: { ...rules.js, ...jsOnly },
-
-    //--------------------------------------------------------------------------
-    // TypeScript (.ts, .tsx) ESLint Configurations
-    //--------------------------------------------------------------------------
-
     overrides: [
+      //------------------------------------------------------------------------
+      // JavaScript / Node ESLint Configurations
+      //------------------------------------------------------------------------
+      {
+        files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
+
+        env,
+
+        extends: [
+          plugins.javaScriptAirbnb,
+          plugins.unicorn,
+          plugins.vitest,
+          plugins.prettier,
+        ],
+
+        rules: { ...rules.js, ...jsOnly },
+      },
+
+      //--------------------------------------------------------------------------
+      // TypeScript ESLint Configurations
+      //--------------------------------------------------------------------------
       {
         files: ['**/*.ts', '**/*.tsx'],
 
