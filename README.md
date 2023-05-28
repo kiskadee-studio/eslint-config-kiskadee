@@ -16,6 +16,9 @@ Having these tools pre-configured and easily integrated into your projects means
   - [Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-react-rules---level-2)
   - [Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-react-rules---level-3)
 - [EditorConfig](https://github.com/kiskadee-studio/eslint-config-kiskadee#editorconfig)
+- IDE and Editor Setup:
+  - [WebStorm](https://github.com/kiskadee-studio/eslint-config-kiskadee#webstorm)
+  - VSCode (coming soon)
 
 ## Installation
 
@@ -34,7 +37,6 @@ Kiskadee handles three levels of ESLint configuration for each type of project, 
 In summary, **level 1** uses only essential plugins, **level 2** includes some additional plugins, and both adhere to the rules recommended by the creators. **Level 3** has the same plugins as level 2 but with some modified rules.
 
 With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects becomes a breeze, as it offers different levels of configuration to cater to your project's specific needs.
-
 
 ## 🔧 ESLint Setup for JavaScript / Node
 
@@ -119,7 +121,6 @@ After installing the dependencies for level 1, then install:
 ```
 
 > Don't hesitate to start a new issue with suggestions for new plugins or a specific configuration for any of the plugins we already have.
-
 
 # 🔧 ESLint Setup for React
 
@@ -214,7 +215,6 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-rel
 
 > Don't hesitate to start a new issue with suggestions for new plugins or a specific configuration for any of the plugins we already have.
 
-
 ## .editorconfig
 
 Though ESLint and Prettier are independent tools, each serving its own purpose, they share some common features with the [editorconfig](https://editorconfig.org/). While Prettier excels at standardizing code formatting aspects, primarily for JavaScript files, the significance of the `.editorconfig` file extends beyond specific programming languages. It helps maintain consistency in coding style and formatting across different development environments, including various IDEs, text editors, and operating systems.
@@ -243,3 +243,9 @@ trim_trailing_whitespace = true
 ```
 
 > **For Windows Users**: you may encounter problems when trying to change the line ending in Git. If this happens, try following [these steps](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
+
+## WebStorm
+
+Go to **Settings** > **Languages & Frameworks** > **JavaScript** > **Code Quality Tools** > **ESLint**, check **"Run eslint --fix on save"**, and if you use JavaScript files with the extensions `.cjs` or `.mjs`, add them to **"Run for files"**.
+
+![webstormeslint.png](assets/webstorm-eslint.png)
