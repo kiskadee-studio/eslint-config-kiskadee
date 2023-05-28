@@ -117,10 +117,10 @@ const level3 = {
    * of these rules are significant for your project, please enable them in
    * your project's settings.
    */
-  // 'no-restricted-syntax': 'off',
-  // 'no-restricted-exports': 'off',
-  // 'no-plusplus': 'off',
-  // 'import/prefer-default-export': 'off',
+  'no-restricted-syntax': 'off',
+  'no-restricted-exports': 'off',
+  'no-plusplus': 'off',
+  'import/prefer-default-export': 'off',
 };
 
 module.exports = { level0, level1, level2, level3 };
