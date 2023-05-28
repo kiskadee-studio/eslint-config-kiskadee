@@ -103,6 +103,14 @@ const level3 = {
   'no-nested-ternary': 'error',
 
   /**
+   * Allows importing devDependencies in configuration and test files
+   */
+  'import/no-extraneous-dependencies': [
+    'error',
+    { devDependencies: ['/**/*.config.*', '**/*.(spec|test).(t|j)s'] },
+  ],
+
+  /**
    * Rules that impose limitations on syntax usage go beyond the purview of
    * ESLint. We hold the view that certain decisions should be made by
    * developers themselves, rather than constraining their choices. If any
