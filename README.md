@@ -18,7 +18,7 @@ Having these tools pre-configured and easily integrated into your projects means
 - [EditorConfig](https://github.com/kiskadee-studio/eslint-config-kiskadee#editorconfig)
 - IDE and Editor Setup:
   - [WebStorm](https://github.com/kiskadee-studio/eslint-config-kiskadee#webstorm)
-  - VSCode (coming soon)
+  - [VS Code](https://github.com/kiskadee-studio/eslint-config-kiskadee#vs-code)
 
 ## Installation
 
