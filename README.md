@@ -246,14 +246,21 @@ trim_trailing_whitespace = true
 
 ## WebStorm
 
-Go to **Settings** > **Languages & Frameworks** > **JavaScript** > **Code Quality Tools** > **ESLint**, check **"Run eslint --fix on save"**, and if you use JavaScript files with the extensions `.cjs` or `.mjs`, add them to **"Run for files"**.
+#### ESLint
+
+Go to **_Settings_** > **_Languages & Frameworks_** > **_JavaScript_** > **_Code Quality Tools_** > **_ESLint_**, check **"Run eslint --fix on save"**, and if you use JavaScript files with the extensions `.cjs` or `.mjs`, add them to **"Run for files"**.
 
 ![webstormeslint.png](assets/webstorm-eslint.png)
 
+#### EditorConfig
+
+WebStorm has native support for `.editorconfig`.
+
 ## VS Code
 
-Download the [ESLint extension by Microsoft](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), then in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file, add the following configuration:
+#### ESLint
 
+Download the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension by Microsoft, then in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file, add the following configuration:
 ```json
 {
   "editor.codeActionsOnSave": {
@@ -261,3 +268,7 @@ Download the [ESLint extension by Microsoft](https://marketplace.visualstudio.co
   }
 }
 ```
+
+#### EditorConfig
+
+For `.editorconfig` support, use the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension.
