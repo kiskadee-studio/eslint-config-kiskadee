@@ -57,7 +57,7 @@ With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects bec
 #### Installation
 
 ```bash
-  npm i -D eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-vitest
+  npm i -D eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest
 ```
 
 #### Usage
@@ -145,7 +145,7 @@ After installing the dependencies for level 1, then install:
 #### Installation for React
 
 ```bash
-  npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-vitest eslint-plugin-testing-library
+  npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library
 ```
 
 If you are using `React Native`, install this complementary dependency:
