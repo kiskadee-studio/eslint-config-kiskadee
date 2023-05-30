@@ -260,7 +260,7 @@ WebStorm has native support for `.editorconfig`.
 
 #### ESLint
 
-Download the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension by Microsoft, then in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file, add the following configuration:
+[Install](https://code.visualstudio.com/learn/get-started/extensions) the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension _by Microsoft_, then in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file, add the following configuration:
 ```json
 {
   "editor.codeActionsOnSave": {
@@ -271,4 +271,4 @@ Download the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeum
 
 #### EditorConfig
 
-For `.editorconfig` support, use the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension.
+For `.editorconfig` support, [use](https://code.visualstudio.com/learn/get-started/extensions) the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension.
