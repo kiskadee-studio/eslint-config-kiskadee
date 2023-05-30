@@ -109,7 +109,7 @@ const level3 = {
     'error',
     {
       devDependencies: [
-        '/**/*.config.*',
+        '**/*.config.*',
         '**/*.(spec|test).(t|j)s(x)',
         '**/__tests__/*.(t|j)s(x)',
       ],
