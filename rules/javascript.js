@@ -107,7 +107,7 @@ const level3 = {
    */
   'import/no-extraneous-dependencies': [
     'error',
-    { devDependencies: ['/**/*.config.*', '**/*.(spec|test).(t|j)s'] },
+    { devDependencies: ['/**/*.config.*', '**/*.(spec|test).(t|j)s(x)'] },
   ],
 
   /**
