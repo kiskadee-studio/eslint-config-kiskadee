@@ -110,8 +110,8 @@ const level3 = {
     {
       devDependencies: [
         '**/*.config.*',
-        '**/*.(spec|test).(t|j)s(x)',
-        '**/__tests__/*.(t|j)s(x)',
+        '**/*.(spec|test).{js,ts,tsx}',
+        '**/__tests__/*.{js,ts,tsx}',
       ],
     },
   ],

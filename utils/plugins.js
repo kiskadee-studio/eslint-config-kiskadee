@@ -65,4 +65,10 @@ module.exports = {
    * @see {https://github.com/facebook/react-native/tree/main/packages/eslint-plugin-react-native#usage}
    */
   reactNative: '@react-native',
+
+  /**
+   * Package name: eslint-plugin-jsonc
+   * @see {https://github.com/ota-meshi/eslint-plugin-jsonc#configuration}
+   */
+  json: 'plugin:jsonc/recommended-with-jsonc',
 };

@@ -84,13 +84,15 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
   - _Enforces the use of absolute import paths_
+- 🧰 **JSON Plugin** ([eslint-plugin-jsonc](https://github.com/ota-meshi/eslint-plugin-jsonc#configuration))
+  - _Support Prettier and JSON rules for `.json`, `.json5` and `.jsonc`_
 
 #### Installation for JavaScript
 
 After installing the dependencies for level 1, then install:
 
 ```bash
-  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
+  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths eslint-plugin-jsonc
 ```
 
 #### Usage for JavaScript
@@ -179,9 +181,11 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
   - _Enforces the use of absolute import paths_
+- 🧰 **JSON Plugin** ([eslint-plugin-jsonc](https://github.com/ota-meshi/eslint-plugin-jsonc#configuration))
+  - _Support Prettier and JSON rules for `.json`, `.json5` and `.jsonc`_
 
 ```bash
-npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
+npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths eslint-plugin-jsonc
 ```
 
 #### Usage level 2 for React
@@ -240,6 +244,7 @@ indent_size = 2
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
+max_line_length = 80
 ```
 
 > **For Windows Users**: you may encounter problems when trying to change the line ending in Git. If this happens, try following [these steps](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
@@ -260,7 +265,8 @@ WebStorm has native support for `.editorconfig`.
 
 #### ESLint
 
-[Install](https://code.visualstudio.com/learn/get-started/extensions) the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension _by Microsoft_, then in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file, add the following configuration:
+[Install](https://code.visualstudio.com/learn/get-started/extensions) the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension _by Microsoft_, which will allow us to run ESLint on save. Then, in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file, add the following configuration:
+
 ```json
 {
   "editor.codeActionsOnSave": {
@@ -268,6 +274,16 @@ WebStorm has native support for `.editorconfig`.
   }
 }
 ```
+
+If you are using the JSON plugin, you need to specify the file extension type in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file. Since ESLint was initially created only for .js files, let's add the JSON extensions along with other standard extensions:
+
+```json
+{
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "json", "jsonc", "json5"]
+}
+```
+
+> VS Code doesn't support `.json5` files, but it does support `.jsonc`, which interestingly is also from Microsoft. If your `.json5` file appears in **a single color**, indicating that the editor doesn't recognize the format, you can simply use the **_Ctrl/Cmd + Shift + P_** shortcut and type **"Change Language Mode"** or click on **"Plain Text" (Language Mode)** at the bottom right of VS Code and search for **"JSON with Comments"**. This way, we make VS Code treat `.json5` files as if they were `.jsonc` files.
 
 #### EditorConfig
 
