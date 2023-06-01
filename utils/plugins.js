@@ -70,5 +70,8 @@ module.exports = {
    * Package name: eslint-plugin-jsonc
    * @see {https://github.com/ota-meshi/eslint-plugin-jsonc#configuration}
    */
-  json: 'plugin:jsonc/recommended-with-jsonc',
+  json: 'plugin:jsonc/recommended-with-json',
+  jsonc: 'plugin:jsonc/recommended-with-jsonc',
+  json5: 'plugin:jsonc/recommended-with-json5',
+  jsonPrettier: 'plugin:jsonc/prettier',
 };

@@ -1,42 +1,38 @@
 ## Description
 
-Utilizing ESLint, Prettier, and TypeScript together in your projects brings a powerful combination of benefits that enhance code quality, readability, and developer productivity. ESLint enforces best practices and catches potential errors early, while Prettier automatically formats your code for improved readability and consistency. TypeScript adds robust type-checking capabilities, further improving the reliability and maintainability of your codebase.
+Utilizing **ESLint**, **Prettier**, and **TypeScript** in your projects brings a powerful combination of benefits that enhance code quality, readability, and developer productivity. ESLint enforces best practices and catches potential errors early, while Prettier automatically formats your code for improved readability and consistency. TypeScript adds robust type-checking capabilities, further improving the reliability and maintainability of your codebase.
 
-Having these tools pre-configured and easily integrated into your projects means you can focus on writing great code without worrying about the setup process. With this streamlined setup, your team will be able to work more efficiently and maintain a high standard of code quality across the entire project.
+To streamline this process, Kiskadee offers three levels of pre-configured ESLint settings for different types of projects, including **JavaScript/Node**, **React**, and **React Native**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
+
+- **Level 1** provides a solid foundation with the recommended settings of each respective plugin for **TypeScript**, **Airbnb's JavaScript Style Guide**, and **Prettier**. This level is perfect for starting projects with the basics, allowing you to later configure rules to your liking and add other plugins.
+- **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
+- **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, **promoting harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
+  In essence, **level 1** uses only essential plugins, **level 2** includes additional plugins, and **level 3** modifies some rules for balance. With Kiskadee, configuring **ESLint**, **Prettier**, and **TypeScript** becomes a breeze, offering different levels of configuration to cater to your project's specific needs. This streamlined setup allows your team to focus on writing great code, maintaining a high standard of code quality across the entire project.
 
 ## 🗂️ Summary
 
-- [Base installation](https://github.com/kiskadee-studio/eslint-config-kiskadee#installation)
-- Kiskadee for JavaScript or Node:
-  - [Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1)
-  - [Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-javascript-rules---level-2)
-  - [Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-javascript-rules---level-3)
-- Kiskadee for React or React Native:
-  - [Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1)
-  - [Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-react-rules---level-2)
-  - [Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-react-rules---level-3)
-- [EditorConfig](https://github.com/kiskadee-studio/eslint-config-kiskadee#editorconfig)
-- IDE and Editor Setup:
+- [Requirements](https://github.com/kiskadee-studio/eslint-config-kiskadee#requirements)
+- Kiskadee Setups:
+  - [JavaScript Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1)
+  - [JavaScript Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-javascript-rules---level-2)
+  - [JavaScript Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-javascript-rules---level-3)
+  - [React Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1)
+  - [React Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-react-rules---level-2)
+  - [React Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-react-rules---level-3)
+  - JSON
+  - Cypress - soon
+  - Detox - soon
+  - JSDoc - soon
+- Bonus Setup:
+  - [EditorConfig](https://github.com/kiskadee-studio/eslint-config-kiskadee#editorconfig)
+  - Prettier - soon
+- IDE/Editor Setup:
   - [WebStorm](https://github.com/kiskadee-studio/eslint-config-kiskadee#webstorm)
   - [VS Code](https://github.com/kiskadee-studio/eslint-config-kiskadee#vs-code)
 
-## Installation
+## Requirements
 
-First, let's install `ESLint` and `Kiskadee`:
-
-```bash
-  npm i -D eslint eslint-config-kiskadee
-```
-
-Kiskadee handles three levels of ESLint configuration for each type of project, be it **JavaScript**/**Node**, **React** or **React Native**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
-
-- **Level 1** of Kiskadee provides a solid foundation that uses the recommended settings of each respective plugin for [TypeScript](https://typescript-eslint.io/getting-started/#step-2-configuration), [Airbnb's JavaScript Style Guide](https://www.npmjs.com/package/eslint-config-airbnb-base), and [Prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration). This level is perfect for starting projects with the basics, allowing you to later [configure rules](https://eslint.org/docs/latest/use/configure/rules) to your liking and add other plugins.
-- **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
-- **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, promoting **harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
-
-In summary, **level 1** uses only essential plugins, **level 2** includes some additional plugins, and both adhere to the rules recommended by the creators. **Level 3** has the same plugins as level 2 but with some modified rules.
-
-With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects becomes a breeze, as it offers different levels of configuration to cater to your project's specific needs.
+As we use TypeScript by default at all levels, you should have a `tsconfig.json` file ***at the root*** of your project for the **ESLint plugin for TypeScript** to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
 
 ## 🔧 ESLint Setup for JavaScript / Node
 
@@ -56,8 +52,10 @@ With Kiskadee, configuring ESLint, Prettier, and TypeScript in your projects bec
 
 #### Installation
 
+In your **terminal**, run the command below to install the necessary dependencies:
+
 ```bash
-  npm i -D eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest
 ```
 
 #### Usage
@@ -73,8 +71,6 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   };
 ```
 
-> **Note:** As we use TypeScript by default at all levels, you should have a `tsconfig.json` file ***at the root*** of your project for the ESLint plugin for TypeScript to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
-
 ### 📖 Great JavaScript Rules - Level 2
 
 - 🔥 **All items from level 1**
@@ -84,21 +80,20 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
   - _Enforces the use of absolute import paths_
-- 🧰 **JSON Plugin** ([eslint-plugin-jsonc](https://github.com/ota-meshi/eslint-plugin-jsonc#configuration))
-  - _Support Prettier and JSON rules for `.json`, `.json5` and `.jsonc`_
 
-#### Installation for JavaScript
+#### Installation
 
-After installing the dependencies for level 1, then install:
+After installing the dependencies for [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1)), then install:
 
 ```bash
-  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths eslint-plugin-jsonc
+  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
 ```
 
-#### Usage for JavaScript
+#### Usage
+
+Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-2`:
 
 ```javascript
-    // .eslintrc.js
     module.exports = {
       extends: ['kiskadee/node-level-2'],
       rules: {
@@ -112,8 +107,15 @@ After installing the dependencies for level 1, then install:
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
 
+#### Installation
+
+Install the dependencies for [level 2](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-2)).
+
+#### Usage
+
+Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-3`:
+
 ```javascript
-    // .eslintrc.js
     module.exports = {
       extends: ['kiskadee/node-level-3'],
       rules: {
@@ -144,10 +146,10 @@ After installing the dependencies for level 1, then install:
   - *Vitest Plugin ([vitest](https://vitest.dev/guide/#adding-vitest-to-your-project) [eslint-plugin-vitest](https://github.com/veritem/eslint-plugin-vitest#installation))*
   - *Testing Library ([eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library#react))*
 
-#### Installation for React
+#### Installation
 
 ```bash
-  npm i -D eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library
 ```
 
 If you are using `React Native`, install this complementary dependency:
@@ -156,12 +158,11 @@ If you are using `React Native`, install this complementary dependency:
   npm i -D @react-native/eslint-plugin
 ```
 
-#### Usage level 1 for React
+#### Usage
 
 Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/react-level-1` (or `kiskadee/react-native-level-1`):
 
 ```javascript
-    // .eslintrc.js
     module.exports = {
       extends: ['kiskadee/react-level-1'], // ['kiskadee/react-native-level-1'] for React Native projects
       rules: {
@@ -181,17 +182,14 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
   - _Enforces the use of absolute import paths_
-- 🧰 **JSON Plugin** ([eslint-plugin-jsonc](https://github.com/ota-meshi/eslint-plugin-jsonc#configuration))
-  - _Support Prettier and JSON rules for `.json`, `.json5` and `.jsonc`_
 
 ```bash
 npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths eslint-plugin-jsonc
 ```
 
-#### Usage level 2 for React
+#### Usage
 
 ```javascript
-    // .eslintrc.js
     module.exports = {
       extends: ['kiskadee/react-level-2'], // ['kiskadee/react-native-level-2'] for React Native projects
       rules: {
@@ -205,10 +203,9 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-rel
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
 
-#### Usage level 3 for React
+#### Usage
 
 ```javascript
-    // .eslintrc.js
     module.exports = {
       extends: ['kiskadee/react-level-3'], // ['kiskadee/react-native-level-3'] for React Native projects
       rules: {
@@ -218,6 +215,37 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-rel
 ```
 
 > Don't hesitate to start a new issue with suggestions for new plugins or a specific configuration for any of the plugins we already have.
+
+## JSON Support
+
+Às vezes você pode alterar seu package.json ou algum arquivo de mock (.json) e percebe as coisas estão ficando desalinhadas, fora de padrão, apesar de você poder lidar com isso apenas com Prettier, nós achamos que é mais prático usar o ESLint para para lidar com arquivos .json, ,jsonc e .json5 com o auxílio das regras do plugin JSONC e formatação do Prettier
+
+Aqui você encontra:
+
+- Suporte a arquivos .json, .jsonc e .json5
+- Formatação do Prettier para JSON
+- Regras do plugin JSONC ([eslint-plugin-jsonc](https://github.com/ota-meshi/eslint-plugin-jsonc#configuration))
+- Correção de conflitos entre JSONC e Prettier
+
+### Installation for JSON
+
+```bash
+npm i -D eslint-plugin-jsonc
+```
+
+### Usage for JSON
+
+Adicione `kiskadee/json` à propriedade `extends` do seu arquivo `.eslintrc.js` ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)):
+
+```javascript
+    // .eslintrc.js
+    module.exports = {
+      extends: ['kiskadee/react-level-3', 'kiskadee/json'],
+      rules: {
+        // your rules
+      },
+    };
+```
 
 ## .editorconfig
 
@@ -274,6 +302,8 @@ WebStorm has native support for `.editorconfig`.
   }
 }
 ```
+
+#### JSON Plugin
 
 If you are using the JSON plugin, you need to specify the file extension type in your [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) file. Since ESLint was initially created only for .js files, let's add the JSON extensions along with other standard extensions:
 

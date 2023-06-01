@@ -10,27 +10,6 @@ module.exports = (level, rules) => {
 
     overrides: [
       //------------------------------------------------------------------------
-      // JSON ESLint Configurations
-      //------------------------------------------------------------------------
-      level > 1
-        ? {
-            files: ['**/*.json', '**/*.json5', '**/*.jsonc'],
-
-            extends: [plugins.json, plugins.prettier],
-
-            rules: {
-              'prettier/prettier': [
-                'error',
-                {
-                  files: ['**/*.json', '**/*.json5', '**/*.jsonc'],
-                  parser: 'json',
-                },
-              ],
-            },
-          }
-        : undefined,
-
-      //------------------------------------------------------------------------
       // JavaScript / Node ESLint Configurations
       //------------------------------------------------------------------------
       {
