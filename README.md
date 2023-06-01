@@ -319,4 +319,4 @@ If you are using the [JSON plugin](https://github.com/kiskadee-studio/eslint-con
 
 #### EditorConfig
 
-For `.editorconfig` support, [use](https://code.visualstudio.com/learn/get-started/extensions) the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension.
+For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/get-started/extensions) the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension.
