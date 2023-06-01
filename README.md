@@ -7,7 +7,8 @@ To streamline this process, Kiskadee offers three levels of pre-configured ESLin
 - **Level 1** provides a solid foundation with the recommended settings of each respective plugin for **TypeScript**, **Airbnb's JavaScript Style Guide**, and **Prettier**. This level is perfect for starting projects with the basics, allowing you to later configure rules to your liking and add other plugins.
 - **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
 - **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, **promoting harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
-  In essence, **level 1** uses only essential plugins, **level 2** includes additional plugins, and **level 3** modifies some rules for balance. With Kiskadee, configuring **ESLint**, **Prettier**, and **TypeScript** becomes a breeze, offering different levels of configuration to cater to your project's specific needs. This streamlined setup allows your team to focus on writing great code, maintaining a high standard of code quality across the entire project.
+
+In essence, **level 1** uses only essential plugins, **level 2** includes additional plugins, and **level 3** modifies some rules for balance. With Kiskadee, configuring **ESLint**, **Prettier**, and **TypeScript** becomes a breeze, offering different levels of configuration to cater to your project's specific needs. This streamlined setup allows your team to focus on writing great code, maintaining a high standard of code quality across the entire project.
 
 ## 🗂️ Summary
 
