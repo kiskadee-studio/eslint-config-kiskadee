@@ -49,7 +49,7 @@ As we use TypeScript by default at all levels, you should have a `tsconfig.json`
 - 🧰 **Testing Support**
   - *Vitest Plugin ([vitest](https://vitest.dev/guide/#adding-vitest-to-your-project) [eslint-plugin-vitest](https://github.com/veritem/eslint-plugin-vitest#installation))*
 
-#### Installation for JavaScript - Level 1
+#### Installation - JavaScript Level 1
 
 In your **terminal**, run the command below to install the necessary dependencies:
 
@@ -57,7 +57,7 @@ In your **terminal**, run the command below to install the necessary dependencie
   npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest
 ```
 
-#### Usage for JavaScript - Level 1
+#### Usage - JavaScript Level 1
 
 Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-1`:
 
@@ -80,7 +80,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
   - _Enforces the use of absolute import paths_
 
-#### Installation for JavaScript - Level 2
+#### Installation - JavaScript Level 2
 
 After installing the dependencies for [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1), then install:
 
@@ -88,7 +88,7 @@ After installing the dependencies for [level 1](https://github.com/kiskadee-stud
   npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
 ```
 
-#### Usage for JavaScript - Level 2
+#### Usage - JavaScript Level 2
 
 Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-2`:
 
@@ -110,7 +110,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 
 Install the dependencies for [level 2](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-2).
 
-#### Usage for JavaScript - Level 3
+#### Usage - JavaScript Level 3
 
 Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-3`:
 
@@ -157,7 +157,7 @@ If you are using `React Native`, install this complementary dependency:
   npm i -D @react-native/eslint-plugin
 ```
 
-#### Usage for React - Level 1
+#### Usage - React Level 1
 
 Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/react-level-1` (or `kiskadee/react-native-level-1`):
 
@@ -182,13 +182,13 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 - 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
   - _Enforces the use of absolute import paths_
 
-#### Installation for React - Level 2
+#### Installation - React for Level 2
 
 ```bash
 npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths eslint-plugin-jsonc
 ```
 
-#### Usage for React - Level 2
+#### Usage - React Level 2
 
 ```javascript
     module.exports = {
@@ -204,7 +204,7 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-rel
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
 
-#### Usage for React - Level 3
+#### Usage - React Level 3
 
 ```javascript
     module.exports = {
