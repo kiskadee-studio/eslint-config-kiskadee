@@ -77,15 +77,15 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _More than 100 powerful ESLint rules_
 - 🧰 **Unused Imports Plugin** ([eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports#usage))
   - _Finds and removes unused ES6 module imports_
-- 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
-  - _Enforces the use of absolute import paths_
+- 🧰 **TypeScript Paths Plugin** (eslint-plugin-typescript-paths)
+  - _Enforces the use of absolute import and export paths_
 
 #### Installation - JavaScript Level 2
 
 After installing the dependencies for [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1), then install:
 
 ```bash
-  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths
+  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
 ```
 
 #### Usage - JavaScript Level 2
@@ -179,13 +179,13 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _More than 100 powerful ESLint rules_
 - 🧰 **Unused Imports Plugin** ([eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports#usage))
   - _Finds and removes unused ES6 module imports_
-- 🧰 **No Relative Import Paths Plugin** ([eslint-plugin-no-relative-import-paths](https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration))
-  - _Enforces the use of absolute import paths_
+- 🧰 **TypeScript Paths Plugin** (eslint-plugin-typescript-paths)
+  - _Enforces the use of absolute import and export paths_
 
 #### Installation - React for Level 2
 
 ```bash
-npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-no-relative-import-paths eslint-plugin-jsonc
+npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
 ```
 
 #### Usage - React Level 2

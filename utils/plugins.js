@@ -49,10 +49,10 @@ module.exports = {
   unusedImports: 'unused-imports',
 
   /**
-   * Package name: eslint-plugin-no-relative-import-paths
-   * @see {https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration}
+   * Package name: eslint-plugin-typescript-paths
+   * @see {https://github.com/kiskadee-studio/eslint-plugin-typescript-paths}
    */
-  noRelativeImportPaths: 'no-relative-import-paths',
+  typescriptPaths: 'typescript-paths',
 
   /**
    * Package name: eslint-plugin-testing-library

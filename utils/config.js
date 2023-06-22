@@ -3,7 +3,7 @@ const plugins = require('./plugins');
 const env = require('./env');
 
 module.exports = (level, rules) => {
-  const level2Plugins = [plugins.unusedImports, plugins.noRelativeImportPaths];
+  const level2Plugins = [plugins.unusedImports, plugins.typescriptPaths];
 
   return {
     root: true,
@@ -27,9 +27,9 @@ module.exports = (level, rules) => {
         rules: { ...rules.js, ...jsOnly },
       },
 
-      //--------------------------------------------------------------------------
+      //------------------------------------------------------------------------
       // TypeScript ESLint Configurations
-      //--------------------------------------------------------------------------
+      //------------------------------------------------------------------------
       {
         files: ['**/*.ts', '**/*.tsx'],
 

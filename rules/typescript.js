@@ -52,6 +52,17 @@ const level2 = {
    * rule in order to successfully remove unused imports.
    */
   '@typescript-eslint/no-unused-vars': 'off',
+
+  /**
+   * Relocating a file to a different folder may necessitate updating all
+   * import statements within that file. However, this issue can be avoided
+   * by using absolute import paths. This ESLint rule assists in ensuring
+   * that absolute import paths are consistently implemented.
+   */
+  'typescript-paths/absolute-import': 'warn',
+  'typescript-paths/absolute-export': 'warn',
+  'typescript-paths/absolute-parent-import': 'warn',
+  'typescript-paths/absolute-parent-export': 'warn',
 };
 
 const level3 = {
