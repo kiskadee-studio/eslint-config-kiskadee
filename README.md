@@ -260,8 +260,6 @@ Some examples of the capabilities offered by both Prettier and EditorConfig incl
 - Ensuring a newline is inserted at the end of a file.
 - Specifying whether to remove trailing whitespace.
 
-By utilizing the .editorconfig file, developers can establish a consistent code style and formatting standard that remains uniform across different IDEs, text editors, and operating systems. This promotes collaboration and enhances code readability throughout the project.
-
 Create a `.editorconfig` file in the project root with the following content:
 
 ```bash
