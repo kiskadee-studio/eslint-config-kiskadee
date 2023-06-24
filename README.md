@@ -28,6 +28,7 @@ To streamline this process, Kiskadee offers three levels of pre-configured ESLin
 - IDE/Editor Setup:
   - [WebStorm](https://github.com/kiskadee-studio/eslint-config-kiskadee#webstorm)
   - [VS Code](https://github.com/kiskadee-studio/eslint-config-kiskadee#vs-code)
+- [Patch Notes](https://github.com/kiskadee-studio/eslint-config-kiskadee#patch-notes)
 
 ## Requirements
 
@@ -318,3 +319,16 @@ If you are using the [JSON plugin](https://github.com/kiskadee-studio/eslint-con
 #### EditorConfig
 
 For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/get-started/extensions) the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension.
+
+
+## Patch Notes
+
+### Version 1.0.0
+
+- Added _**setup for JSON**_ files
+- Replaced `eslint-plugin-no-relative-import-paths` with `eslint-plugin-typescript-paths`
+- Reviewed and updated documentation
+
+#### Breaking changes (0.0.42 => 1.0.0)
+
+- Removed `eslint-plugin-no-relative-import-paths`. Please install `eslint-plugin-typescript-paths` if you are using any level 2 setup.
