@@ -49,10 +49,10 @@ module.exports = {
   unusedImports: 'unused-imports',
 
   /**
-   * Package name: eslint-plugin-no-relative-import-paths
-   * @see {https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths#configuration}
+   * Package name: eslint-plugin-typescript-paths
+   * @see {https://github.com/kiskadee-studio/eslint-plugin-typescript-paths}
    */
-  noRelativeImportPaths: 'no-relative-import-paths',
+  typescriptPaths: 'typescript-paths',
 
   /**
    * Package name: eslint-plugin-testing-library
@@ -65,4 +65,13 @@ module.exports = {
    * @see {https://github.com/facebook/react-native/tree/main/packages/eslint-plugin-react-native#usage}
    */
   reactNative: '@react-native',
+
+  /**
+   * Package name: eslint-plugin-jsonc
+   * @see {https://github.com/ota-meshi/eslint-plugin-jsonc#configuration}
+   */
+  json: 'plugin:jsonc/recommended-with-json',
+  jsonc: 'plugin:jsonc/recommended-with-jsonc',
+  json5: 'plugin:jsonc/recommended-with-json5',
+  jsonPrettier: 'plugin:jsonc/prettier',
 };

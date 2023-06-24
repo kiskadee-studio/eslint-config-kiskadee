@@ -50,17 +50,6 @@ const level2 = {
     },
   ],
 
-  /**
-   * Relocating a file to a different folder may necessitate updating all
-   * import statements within that file. However, this issue can be avoided
-   * by using absolute import paths. This ESLint rule assists in ensuring
-   * that absolute import paths are consistently implemented.
-   */
-  'no-relative-import-paths/no-relative-import-paths': [
-    'error',
-    { allowSameFolder: true, rootDir: '/', prefix: '@' },
-  ],
-
   //----------------------------------------------------------------------------
   // Resolves conflicts among various ESLint configurations.
   //----------------------------------------------------------------------------
@@ -110,8 +99,8 @@ const level3 = {
     {
       devDependencies: [
         '**/*.config.*',
-        '**/*.(spec|test).(t|j)s(x)',
-        '**/__tests__/*.(t|j)s(x)',
+        '**/*.(spec|test).{js,ts,tsx}',
+        '**/__tests__/*.{js,ts,tsx}',
       ],
     },
   ],
