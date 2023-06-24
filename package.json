@@ -49,7 +49,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.11.0",
-    "eslint-plugin-typescript-paths": "^0.0.17",
+    "eslint-plugin-typescript-paths": "^0.0.18",
     "eslint-plugin-unicorn": "^47.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "eslint-plugin-vitest": "^0.2.6",
