@@ -52,7 +52,7 @@ module.exports = {
    * Package name: eslint-plugin-typescript-paths
    * @see {https://github.com/kiskadee-studio/eslint-plugin-typescript-paths}
    */
-  typescriptPaths: 'typescript-paths',
+  typescriptPaths: 'plugin:typescript-paths/recommended',
 
   /**
    * Package name: eslint-plugin-testing-library

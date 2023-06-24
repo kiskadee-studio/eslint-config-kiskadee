@@ -3,8 +3,6 @@ const plugins = require('./plugins');
 const env = require('./env');
 
 module.exports = (level, rules) => {
-  const level2Plugins = [plugins.unusedImports, plugins.typescriptPaths];
-
   return {
     root: true,
 
@@ -35,31 +33,42 @@ module.exports = (level, rules) => {
 
         env,
 
+        /**
+         * @see {@link https://typescript-eslint.io/getting-started#step-2-configuration}
+         */
         parser: '@typescript-eslint/parser',
-
         parserOptions: {
+          /**
+           * @see {@link https://typescript-eslint.io/architecture/parser#ecmafeatures}
+           */
           ecmaFeatures: {
             jsx: true,
           },
           ecmaVersion: 'latest',
-          sourceType: 'module',
-          project: ['./tsconfig.json'],
         },
 
         extends: [
+          // JavaScript / React
           rules.react ? plugins.reactAirbnb : plugins.javaScriptAirbnb,
-          plugins.unicorn,
+          level >= 2 ? plugins.unicorn : undefined,
+
+          // TypeScript
           plugins.typescript,
           plugins.importTypescript,
+          level >= 2 ? plugins.typescriptPaths : undefined,
+
+          // Testing
           plugins.vitest,
           rules.react ? plugins.testingLibraryReact : undefined,
+
+          // Formatting
           plugins.prettier,
         ].filter(Boolean),
 
         plugins: [
-          ...(level > 1 ? level2Plugins : []),
-          ...(rules.reactNative ? [plugins.reactNative] : []),
-        ],
+          level >= 2 ? plugins.unusedImports : undefined,
+          rules.reactNative ? plugins.reactNative : undefined,
+        ].filter(Boolean),
 
         rules: {
           ...rules.js,
