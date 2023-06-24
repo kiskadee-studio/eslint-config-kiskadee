@@ -6,4 +6,4 @@
 
 #### Breaking changes (0.0.42 => 1.0.0)
 
-- Removed `eslint-plugin-no-relative-import-paths`. Please install `eslint-plugin-typescript-paths` if you are using any level 2 setup.
+- Remove `eslint-plugin-no-relative-import-paths`. Please install `eslint-plugin-typescript-paths` if you are using any level 2 setup.
