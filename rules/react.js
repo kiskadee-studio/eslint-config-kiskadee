@@ -101,6 +101,11 @@ const level3 = {
    * rule may cause more problems than it solves.
    */
   'react-hooks/exhaustive-deps': 'off',
+
+  /**
+   * The use of React.PropTypes is not recommended when working with TypeScript.
+   */
+  'react/require-default-props': 'off',
 };
 
 module.exports = { level1, level2, level3 };

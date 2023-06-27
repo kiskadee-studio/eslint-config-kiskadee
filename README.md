@@ -5,7 +5,7 @@ Utilizing **ESLint**, **Prettier**, and **TypeScript** in your projects brings a
 To streamline this process, Kiskadee offers three levels of pre-configured ESLint settings for different types of projects, including **Node**, **React**, and **React Native**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
 
 - **Level 1** provides a solid foundation with the recommended settings of each respective plugin for **TypeScript**, **Airbnb's JavaScript Style Guide**, and **Prettier**. This level is perfect for starting projects with the basics, allowing you to later configure rules to your liking and add other plugins.
-- **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **No Relative Import Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
+- **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **TypeScript Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
 - **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, **promoting harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
 
 ## 🗂️ Summary
@@ -42,10 +42,10 @@ As we use TypeScript by default at all levels, you should have a `tsconfig.json`
   - _JavaScript Plugin ([eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base))_
   - *Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))*
 - 🧰 **TypeScript Support**
-  - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
-  - *Fixed conflicts among different rules ([eslint-config-kiskadee](https://github.com/kiskadee-studio/eslint-config-kiskadee#installation) [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
+  - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing), [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
+  - *Fixed conflicts among different rules ([eslint-config-kiskadee](https://github.com/kiskadee-studio/eslint-config-kiskadee#installation), [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
 - 🧰 **Prettier Support**
-  - _Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))_
+  - _Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))_
   - *Fixed conflicts among different rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))*
 - 🧰 **Testing Support**
   - *Vitest Plugin ([vitest](https://vitest.dev/guide/#adding-vitest-to-your-project) [eslint-plugin-vitest](https://github.com/veritem/eslint-plugin-vitest#installation))*
@@ -78,7 +78,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _More than 100 powerful ESLint rules_
 - 🧰 **Unused Imports Plugin** ([eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports#usage))
   - _Finds and removes unused ES6 module imports_
-- 🧰 **TypeScript Paths Plugin** (eslint-plugin-typescript-paths)
+- 🧰 **TypeScript Paths Plugin** ([eslint-plugin-typescript-paths](https://github.com/kiskadee-studio/eslint-plugin-typescript-paths))
   - _Enforces the use of absolute import and export paths_
 
 #### Installation - JavaScript Level 2
@@ -137,13 +137,13 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Import Plugin ([eslint-plugin-import](https://github.com/import-js/eslint-plugin-import))_
   - JSX Accessibility Plugin ([eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y))
 - 🧰 **TypeScript Support**
-  - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing) [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
-  - *Fixed conflicts among different rules ([eslint-config-kiskadee](https://github.com/kiskadee-studio/eslint-config-kiskadee#installation) [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
+  - *TypeScript Plugin ([typescript](https://github.com/Microsoft/TypeScript#installing), [@typescript-eslint](https://typescript-eslint.io/getting-started/#step-2-configuration))*
+  - *Fixed conflicts among different rules ([eslint-config-kiskadee](https://github.com/kiskadee-studio/eslint-config-kiskadee#installation), [eslint-import-resolver-typescript](https://github.com/import-js/eslint-import-resolver-typescript))*
 - 🧰 **Prettier Support**
-  - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html) [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
+  - Prettier Plugin ([prettier](https://prettier.io/docs/en/install.html), [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration))
   - _*Fixed conflicts among different rules ([eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation))*_
 - 🧰 **Testing Support**
-  - *Vitest Plugin ([vitest](https://vitest.dev/guide/#adding-vitest-to-your-project) [eslint-plugin-vitest](https://github.com/veritem/eslint-plugin-vitest#installation))*
+  - *Vitest Plugin ([vitest](https://vitest.dev/guide/#adding-vitest-to-your-project), [eslint-plugin-vitest](https://github.com/veritem/eslint-plugin-vitest#installation))*
   - *Testing Library ([eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library#react))*
 
 #### Installation for React - Level 1
@@ -171,8 +171,6 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
     };
 ```
 
-> **Note:** As we use TypeScript by default at all levels, you should have a `tsconfig.json` file ***at the root*** of your project for the ESLint plugin for TypeScript to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
-
 ### 📖 Great React Rules - Level 2
 
 - 🔥 **All items from level 1**
@@ -180,7 +178,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _More than 100 powerful ESLint rules_
 - 🧰 **Unused Imports Plugin** ([eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports#usage))
   - _Finds and removes unused ES6 module imports_
-- 🧰 **TypeScript Paths Plugin** (eslint-plugin-typescript-paths)
+- 🧰 **TypeScript Paths Plugin** ([eslint-plugin-typescript-paths](https://github.com/kiskadee-studio/eslint-plugin-typescript-paths))
   - _Enforces the use of absolute import and export paths_
 
 #### Installation - React for Level 2
@@ -314,12 +312,11 @@ If you are using the [JSON plugin](https://github.com/kiskadee-studio/eslint-con
 }
 ```
 
-> **VS Code** doesn't support `.json5` files, but it does support `.jsonc`, which interestingly is also from Microsoft. If your `.json5` file appears in **a single color**, indicating that the editor doesn't recognize the format, you can simply use the **_Ctrl/Cmd + Shift + P_** shortcut and type **"Change Language Mode"** or click on **"Plain Text" (Language Mode)** at the bottom right of **VS Code** and search for **"JSON with Comments"**. This way, we make VS Code treat `.json5` files as if they were `.jsonc` files.
+> **VS Code** doesn't support `.json5` files, but it does support `.jsonc`. If your `.json5` file appears in **a single color**, indicating that the editor doesn't recognize the format, you can simply use the **_Ctrl/Cmd + Shift + P_** shortcut and type **"Change Language Mode"** or click on **"Plain Text" (Language Mode)** at the bottom right of **VS Code** and search for **"JSON with Comments"**. This way, we make VS Code treat `.json5` files as if they were `.jsonc` files.
 
 #### EditorConfig
 
 For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/get-started/extensions) the [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extension.
-
 
 ## Patch Notes
 
