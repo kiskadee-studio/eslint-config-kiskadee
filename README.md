@@ -312,7 +312,7 @@ If you are using the [JSON plugin](https://github.com/kiskadee-studio/eslint-con
 }
 ```
 
-> **VS Code** doesn't support `.json5` files, but it does support `.jsonc`, which interestingly is also from Microsoft. If your `.json5` file appears in **a single color**, indicating that the editor doesn't recognize the format, you can simply use the **_Ctrl/Cmd + Shift + P_** shortcut and type **"Change Language Mode"** or click on **"Plain Text" (Language Mode)** at the bottom right of **VS Code** and search for **"JSON with Comments"**. This way, we make VS Code treat `.json5` files as if they were `.jsonc` files.
+> **VS Code** doesn't support `.json5` files, but it does support `.jsonc`. If your `.json5` file appears in **a single color**, indicating that the editor doesn't recognize the format, you can simply use the **_Ctrl/Cmd + Shift + P_** shortcut and type **"Change Language Mode"** or click on **"Plain Text" (Language Mode)** at the bottom right of **VS Code** and search for **"JSON with Comments"**. This way, we make VS Code treat `.json5` files as if they were `.jsonc` files.
 
 #### EditorConfig
 
