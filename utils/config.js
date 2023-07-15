@@ -3,6 +3,10 @@ const plugins = require('./plugins');
 const env = require('./env');
 
 module.exports = (level, rules) => {
+  const isLevel2 = level >= 2;
+  const hasReact = rules.react;
+  const hasReactNative = rules.reactNative;
+
   return {
     root: true,
 
@@ -39,35 +43,42 @@ module.exports = (level, rules) => {
         parser: '@typescript-eslint/parser',
         parserOptions: {
           /**
-           * @see {@link https://typescript-eslint.io/architecture/parser#ecmafeatures}
+           * @see {@link https://typescript-eslint.io/linting/typed-linting}
            */
           ecmaFeatures: {
             jsx: true,
           },
           ecmaVersion: 'latest',
+          /**
+           * @see {@link https://typescript-eslint.io/linting/typed-linting}
+           * @see {@link https://typescript-eslint.io/linting/typed-linting#specifying-tsconfigs}
+           */
+          project: true,
         },
 
         extends: [
           // JavaScript / React
-          rules.react ? plugins.reactAirbnb : plugins.javaScriptAirbnb,
-          level >= 2 ? plugins.unicorn : undefined,
+          hasReact ? plugins.reactAirbnb : plugins.javaScriptAirbnb,
+          isLevel2 ? plugins.unicorn : undefined,
 
           // TypeScript
-          plugins.typescript,
+          plugins.typescriptStrict,
+          plugins.typescriptStylistic,
           plugins.importTypescript,
-          level >= 2 ? plugins.typescriptPaths : undefined,
+          isLevel2 ? plugins.typescriptPaths : undefined,
 
           // Testing
           plugins.vitest,
-          rules.react ? plugins.testingLibraryReact : undefined,
+          hasReact ? plugins.testingLibraryReact : undefined,
 
           // Formatting
           plugins.prettier,
         ].filter(Boolean),
 
         plugins: [
-          level >= 2 ? plugins.unusedImports : undefined,
-          rules.reactNative ? plugins.reactNative : undefined,
+          isLevel2 ? plugins.unusedImports : undefined,
+          hasReact && isLevel2 ? plugins.reactRefresh : undefined,
+          hasReactNative ? plugins.reactNative : undefined,
         ].filter(Boolean),
 
         rules: {
