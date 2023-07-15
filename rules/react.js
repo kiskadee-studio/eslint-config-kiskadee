@@ -30,8 +30,16 @@ const level1 = {
 };
 
 const level2 = {
+  /**
+   * Occasionally, we encounter situations where the changes made to our component are not reflected on the screen. This can be attributed to certain limitations of fast refresh. However, utilizing this plugin enables us to mitigate these issues effectively
+   */
+  'react-refresh/only-export-components': [
+    'warn',
+    { allowConstantExport: true },
+  ],
+
   //----------------------------------------------------------------------------
-  // Resolves conflicts among various ESLint configurations.
+  // Resolves conflicts among various ESLint configurations
   //----------------------------------------------------------------------------
   /**
    * The goal is to preserve kebab-case as the standard naming

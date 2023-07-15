@@ -13,9 +13,10 @@ module.exports = {
 
   /**
    * Package names: typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
-   * @see {@link https://typescript-eslint.io/getting-started}
+   * @see {@link https://typescript-eslint.io/linting/configs#projects-with-type-checking}
    */
-  typescript: 'plugin:@typescript-eslint/recommended',
+  typescriptStrict: 'plugin:@typescript-eslint/strict-type-checked',
+  typescriptStylistic: 'plugin:@typescript-eslint/stylistic-type-checked',
 
   /**
    * Package name: eslint-plugin-import
@@ -65,6 +66,12 @@ module.exports = {
    * @see {https://github.com/facebook/react-native/tree/main/packages/eslint-plugin-react-native#usage}
    */
   reactNative: '@react-native',
+
+  /**
+   * Package name: eslint-plugin-react-refresh
+   * @see {https://github.com/ArnaudBarre/eslint-plugin-react-refresh#eslint-plugin-react-refresh-}
+   */
+  reactRefresh: 'react-refresh',
 
   /**
    * Package name: eslint-plugin-jsonc
