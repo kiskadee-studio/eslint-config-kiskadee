@@ -55,7 +55,7 @@ As we use TypeScript by default at all levels, you should have a `tsconfig.json`
 In your **terminal**, run the command below to install the necessary dependencies:
 
 ```bash
-  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest
 ```
 
 #### Usage - JavaScript Level 1
@@ -149,7 +149,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 #### Installation for React - Level 1
 
 ```bash
-  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library
 ```
 
 If you are using `React Native`, install this complementary dependency:
