@@ -1,8 +1,8 @@
 ### Version 2.0.0
 
 - Updated dependencies to latest versions
-- Reviewed and updated documentation
 - Added new plugin `eslint-plugin-react-refresh` to level 2 config
+- Reviewed and updated documentation
 
 #### Breaking changes (1.0.0 => 2.0.0)
 
