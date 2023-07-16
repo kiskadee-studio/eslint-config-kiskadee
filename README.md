@@ -216,6 +216,10 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typesc
 
 > Don't hesitate to start a new issue with suggestions for new plugins or a specific configuration for any of the plugins we already have.
 
+## TSConfig
+
+...
+
 ## JSON
 
 You can also use **ESLint** together with **Prettier** to keep your `.json` files aligned and in the correct format.
