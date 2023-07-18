@@ -106,6 +106,15 @@ const level3 = {
   ],
 
   /**
+   * It promotes a more concise and readable style for arrow function
+   * expressions. It avoids the need for unnecessary code blocks and return
+   * statements, making the syntax leaner and more straightforward. It improves
+   * code readability by clearly highlighting the intention of the function and
+   * making it easier to understand its behavior.
+   */
+  'arrow-body-style': ['error', 'as-needed'],
+
+  /**
    * Rules that impose limitations on syntax usage go beyond the purview of
    * ESLint. We hold the view that certain decisions should be made by
    * developers themselves, rather than constraining their choices. If any
