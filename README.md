@@ -4,10 +4,6 @@ Utilizing **ESLint**, **Prettier**, and **TypeScript** in your projects brings a
 
 To streamline this process, Kiskadee offers three levels of pre-configured ESLint settings for different types of projects, including **Node**, **React**, and **React Native**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
 
-- **Level 1** provides a solid foundation with the recommended settings of each respective plugin for **TypeScript**, **Airbnb's JavaScript Style Guide**, and **Prettier**. This level is perfect for starting projects with the basics, allowing you to later configure rules to your liking and add other plugins.
-- **Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **TypeScript Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
-- **Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, **promoting harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
-
 ## 🗂️ Summary
 
 - [Requirements](https://github.com/kiskadee-studio/eslint-config-kiskadee#requirements)
@@ -31,6 +27,8 @@ To streamline this process, Kiskadee offers three levels of pre-configured ESLin
 As we use TypeScript by default at all levels, you should have a `tsconfig.json` file ***at the root*** of your project for the **ESLint plugin for TypeScript** to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
 
 ## JavaScript - Level 1
+
+**Level 1** provides a solid foundation with the recommended settings of each respective plugin for **TypeScrip**,
 
 - 🧰 **Airbnb: JavaScript Style Guide**
   - _JavaScript Plugin ([eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base))_
@@ -63,6 +61,8 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 ```
 
 ## JavaScript - Level 2
+
+**Level 2** offers a more complete solution, adding the **Unicorn plugin** with over 100 rules, the **Unused Imports plugin** to remove unused imports, and the **TypeScript Paths plugin** to enforce the use of absolute import paths. This level is ideal for projects that require more extensive rule coverage.
 
 - 🔥 **All items from level 1**
 - 🧰 **Unicorn Plugin** ([eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config))
@@ -97,6 +97,8 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 ```
 
 ### 📖 Kiskadee JavaScript Rules - Level 3
+
+**Level 3** focuses on adjusting existing rules to find the perfect middle ground between being overly strict or too lenient, **promoting harmony and uniformity among the multiple plugins** used in your project. This level is well-suited for projects that need a finely tuned and balanced set of rules.
 
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
