@@ -62,10 +62,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 
 ```javascript
   module.exports = {
-    extends: ['kiskadee/node-level-1'],
-    rules: {
-      // your rules
-    },
+    extends: ['kiskadee/node-level-1']
   };
 ```
 
@@ -99,10 +96,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 
 ```javascript
     module.exports = {
-      extends: ['kiskadee/node-level-2'],
-      rules: {
-        // your rules
-      },
+      extends: ['kiskadee/node-level-2']
     };
 ```
 
@@ -111,20 +105,17 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
 
-#### ✧ Installation
+#### Installation
 
 Install the dependencies for [level 2](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-2).
 
-#### ✧ Usage
+#### Usage
 
 Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-3`:
 
 ```javascript
     module.exports = {
-      extends: ['kiskadee/node-level-3'],
-      rules: {
-        // your rules
-      },
+      extends: ['kiskadee/node-level-3']
     };
 ```
 
