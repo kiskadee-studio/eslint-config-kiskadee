@@ -34,9 +34,7 @@ To streamline this process, Kiskadee offers three levels of pre-configured ESLin
 
 As we use TypeScript by default at all levels, you should have a `tsconfig.json` file ***at the root*** of your project for the **ESLint plugin for TypeScript** to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
 
-## 🔧 ESLint Setup for JavaScript / Node
-
-### 📖 Essential JavaScript Rules - Level 1
+## JavaScript - Level 1
 
 - 🧰 **Airbnb: JavaScript Style Guide**
   - _JavaScript Plugin ([eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base))_
@@ -50,7 +48,7 @@ As we use TypeScript by default at all levels, you should have a `tsconfig.json`
 - 🧰 **Testing Support**
   - *Vitest Plugin ([vitest](https://vitest.dev/guide/#adding-vitest-to-your-project) [eslint-plugin-vitest](https://github.com/veritem/eslint-plugin-vitest#installation))*
 
-#### ✧ Installation
+### Installation
 
 In your **terminal**, run the command below to install the necessary dependencies:
 
@@ -58,7 +56,7 @@ In your **terminal**, run the command below to install the necessary dependencie
   npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest
 ```
 
-#### ✧ Usage
+### Usage
 
 Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-1`:
 
@@ -71,7 +69,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   };
 ```
 
-### 📖 Great JavaScript Rules - Level 2
+## JavaScript - Level 2
 
 - 🔥 **All items from level 1**
 - 🧰 **Unicorn Plugin** ([eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn#recommended-config))
@@ -81,7 +79,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 - 🧰 **TypeScript Paths Plugin** ([eslint-plugin-typescript-paths](https://github.com/kiskadee-studio/eslint-plugin-typescript-paths))
   - _Enforces the use of absolute import and export paths_
 
-#### ✧ Installation
+### Installation
 
 In your terminal, to install all dependencies, execute:
 
