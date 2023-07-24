@@ -1,30 +1,30 @@
 ## Description
 
-Utilizing **ESLint**, **Prettier**, and **TypeScript** in your projects brings a powerful combination of benefits that enhance code quality, readability, and developer productivity.
-
-To streamline this process, Kiskadee offers three levels of pre-configured ESLint settings for different types of projects, including **Node**, **React**, and **React Native**. Each level represents a set of rules that can be applied to your project, allowing you to choose the level that best suits your needs:
+With **Kiskadee**, configuring `ESLint` to work harmoniously with `TypeScript` and `Prettier` has never been **_easier_**. Take advantage of our pre-defined setups, complete with a selection of **_valuable rules_** that can enhance your project.
 
 ## 🗂️ Summary
 
 - [Requirements](https://github.com/kiskadee-studio/eslint-config-kiskadee#requirements)
-- Kiskadee Setups:
-  - [JavaScript Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1)
-  - [JavaScript Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-javascript-rules---level-2)
-  - [JavaScript Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-javascript-rules---level-3)
-  - [React Level 1 - Essential rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1)
-  - [React Level 2 - Great rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-great-react-rules---level-2)
-  - [React Level 3 - Kiskadee rules](https://github.com/kiskadee-studio/eslint-config-kiskadee#-kiskadee-react-rules---level-3)
-  - [JSON](https://github.com/kiskadee-studio/eslint-config-kiskadee#json)
+- Kiskadee Configurations:
+  - [JavaScript - Level 1](#-essential-javascript-rules---level-1)
+  - [JavaScript - Level 2](#-great-javascript-rules---level-2)
+  - [JavaScript - Level 3](#-kiskadee-javascript-rules---level-3)
+  - [React - Level 1](#-essential-react-rules---level-1)
+  - [React - Level 2](#-great-react-rules---level-2)
+  - [React - Level 3](#-kiskadee-react-rules---level-3)
+  - [JSON](#json)
 - Bonus Setup:
-  - [EditorConfig](https://github.com/kiskadee-studio/eslint-config-kiskadee#editorconfig)
+  - [EditorConfig](#editorconfig)
 - IDE/Editor Setup:
-  - [WebStorm](https://github.com/kiskadee-studio/eslint-config-kiskadee#webstorm)
-  - [VS Code](https://github.com/kiskadee-studio/eslint-config-kiskadee#vs-code)
-- [Patch Notes](https://github.com/kiskadee-studio/eslint-config-kiskadee#patch-notes)
+  - [WebStorm](#webstorm)
+  - [VS Code](#vs-code)
+- [Patch Notes](#patch-notes)
 
 ## Requirements
 
 As we use TypeScript by default at all levels, you should have a `tsconfig.json` file ***at the root*** of your project for the **ESLint plugin for TypeScript** to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
+
+> **Level 2** configurations support **_absolute imports and exports_** based on the `tsconfig.json`. Remember to set a [baseUrl](https://www.typescriptlang.org/tsconfig#baseUrl) and [paths](https://www.typescriptlang.org/tsconfig#paths) in your tsconfig.json file.
 
 ## JavaScript - Level 1
 
