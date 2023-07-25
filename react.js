@@ -4,7 +4,6 @@
  * {@link https://www.npmjs.com/package/eslint-config-airbnb}
  * {@link https://github.com/ArnaudBarre/eslint-plugin-react-refresh#eslint-plugin-react-refresh-}
  */
-
 module.exports = {
   extends: ['kiskadee/react-airbnb'],
 
