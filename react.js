@@ -1,3 +1,10 @@
+/**
+ * Packages: eslint-config-airbnb eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react-refresh
+ * @see
+ * {@link https://www.npmjs.com/package/eslint-config-airbnb}
+ * {@link https://github.com/ArnaudBarre/eslint-plugin-react-refresh#eslint-plugin-react-refresh-}
+ */
+
 module.exports = {
   extends: ['kiskadee/react-airbnb'],
 
@@ -33,8 +40,8 @@ module.exports = {
     'react/jsx-boolean-value': ['error', 'always'],
 
     /**
-     * Specifying all dependencies is not always required, and at times, this
-     * rule may cause more problems than it solves.
+     * It is not always necessary to specify all dependencies, and sometimes
+     * this rule can cause more problems than it helps.
      */
     'react-hooks/exhaustive-deps': 'off',
   },
