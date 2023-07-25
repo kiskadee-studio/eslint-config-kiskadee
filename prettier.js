@@ -1,8 +1,15 @@
+/**
+ * Packages: eslint-plugin-prettier eslint-config-prettier
+ * @see
+ * {@link https://github.com/prettier/eslint-plugin-prettier#recommended-configuration}
+ * {@link https://github.com/prettier/eslint-config-prettier#installation}
+ */
 module.exports = {
   extends: ['plugin:prettier/recommended'],
+
   rules: {
     /**
-     * Prettier uses double quotes by default; however, Airbnb and Google style
+     * Prettier uses double quotes by default, however Airbnb and Google style
      * guides recommends single quotes. For this reason, we have chosen to stick
      * with single quotes.
      * @see
