@@ -1,3 +1,8 @@
+/**
+ * Packages: typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+ * @see
+ * {@link https://typescript-eslint.io/linting/typed-linting}
+ */
 module.exports = {
   root: true,
 
@@ -26,11 +31,6 @@ module.exports = {
          */
         project: true,
       },
-
-      extends: [
-        'plugin:@typescript-eslint/strict-type-checked',
-        'plugin:@typescript-eslint/stylistic-type-checked',
-      ],
 
       rules: {
         /**

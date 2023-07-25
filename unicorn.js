@@ -26,5 +26,16 @@ module.exports = {
         ],
       },
     ],
+
+    /**
+     * This rule is disabled because the "unicorn/prefer-regexp-test" rule
+     * already handles the same matter. Since the context is not exclusive to
+     * TypeScript but also applies to EcmaScript, the Unicorn rule is given
+     * preference.
+     * @see
+     * {@link https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md}
+     * {@link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-regexp-exec.md}
+     */
+    '@typescript-eslint/prefer-regexp-exec': 'off',
   },
 };
