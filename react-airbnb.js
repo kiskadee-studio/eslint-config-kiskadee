@@ -5,7 +5,7 @@
  * {@link https://github.com/ArnaudBarre/eslint-plugin-react-refresh#eslint-plugin-react-refresh-}
  */
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks'],
+  extends: ['airbnb', 'airbnb/hooks', 'kiskadee/import'],
 
   plugins: ['react-refresh'],
 
