@@ -5,8 +5,6 @@
  * {@link https://github.com/ArnaudBarre/eslint-plugin-react-refresh#eslint-plugin-react-refresh-}
  */
 module.exports = {
-  extends: ['kiskadee/airbnb'],
-
   rules: {
     /**
      * Starting from version 17, importing React is no longer mandatory.

@@ -1,8 +1,11 @@
 module.exports = {
   extends: [
-    'kiskadee/javascript/recommended/airbnb',
-    'kiskadee/react/recommended/airbnb',
-    'kiskadee/react',
+    'kiskadee/javascript/airbnb',
+    'kiskadee/javascript/extra',
+
+    'kiskadee/react/airbnb',
+    'kiskadee/react/extra',
+
     'kiskadee/import-airbnb',
     'kiskadee/typescript/strict',
     'kiskadee/prettier',
