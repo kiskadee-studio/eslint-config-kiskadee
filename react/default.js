@@ -5,9 +5,16 @@
  * {@link https://github.com/ArnaudBarre/eslint-plugin-react-refresh#eslint-plugin-react-refresh-}
  */
 module.exports = {
-  extends: ['kiskadee/react-airbnb'],
+  extends: ['kiskadee/airbnb'],
 
   rules: {
+    /**
+     * Starting from version 17, importing React is no longer mandatory.
+     * @see
+     * {@link https://reactjs.org/blog/2020/10/20/react-v17.html#new-jsx-transform}
+     */
+    'react/react-in-jsx-scope': 'off',
+
     /**
      * Establishes a consistent approach to declaring React components using
      * arrow functions, as class components are no longer recommended.

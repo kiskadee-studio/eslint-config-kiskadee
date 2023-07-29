@@ -1,34 +1,4 @@
-/**
- * Packages: eslint-config-airbnb eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react-refresh
- * @see
- * {@link https://www.npmjs.com/package/eslint-config-airbnb}
- * {@link https://github.com/ArnaudBarre/eslint-plugin-react-refresh#eslint-plugin-react-refresh-}
- */
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'kiskadee/import'],
-
-  plugins: ['react-refresh'],
-
-  rules: {
-    /**
-     * Occasionally, we encounter situations where the changes made to our
-     * component are not reflected on the screen. This can be attributed to
-     * certain limitations of fast refresh. However, utilizing this plugin
-     * enables us to mitigate these issues effectively.
-     */
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
-
-    /**
-     * Starting from version 17, importing React is no longer mandatory.
-     * @see
-     * {@link https://reactjs.org/blog/2020/10/20/react-v17.html#new-jsx-transform}
-     */
-    'react/react-in-jsx-scope': 'off',
-  },
-
   overrides: [
     {
       files: ['**/*.tsx'],
