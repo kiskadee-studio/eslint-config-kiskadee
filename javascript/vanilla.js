@@ -1,7 +1,8 @@
+import js from "@eslint/js";
+
 /**
  * plugin: eslint
  * {@link https://eslint.org/docs/latest/rules/}
  */
-module.exports = {
-  extends: ['eslint:recommended'],
-};
+export const jsVanilla = js.configs.recommended;
+

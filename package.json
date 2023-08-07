@@ -2,6 +2,7 @@
   "name": "eslint-config-kiskadee",
   "version": "2.0.0",
   "packageManager": "npm@9.5.1",
+  "type": "commonjs",
   "description": "Definitive ESLint configuration for JavaScript or React or React Native, Airbnb Style Guide, Prettier, TypeScript, Unicorn and more",
   "main": "index.js",
   "keywords": [
@@ -35,10 +36,11 @@
     "url": "https://github.com/kiskadee-studio/eslint-config-kiskadee/issues"
   },
   "dependencies": {
+    "@eslint/js": "^8.46.0",
     "@react-native/eslint-plugin": "^0.73.0",
-    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.2.0",
-    "eslint": "^8.46.0",
+    "eslint": "^8.0.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.9.0",

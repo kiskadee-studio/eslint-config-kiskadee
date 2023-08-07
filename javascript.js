@@ -1,3 +1,7 @@
 module.exports = {
-  extends: ['eslint:recommended'],
+  extends: [
+    'kiskadee/javascript/airbnb',
+    'kiskadee/javascript/extra',
+    'kiskadee/javascript/typescript',
+  ],
 };

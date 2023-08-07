@@ -1,10 +1,8 @@
-const nodeLevel3 = require('./node-level-3');
-const json = require('./json');
+const {
+  tsVanilla,
+  tsStrict,
+  tsExtra,
+  tsConfig,
+} = require('./javascript/typescript');
 
-nodeLevel3.overrides.push(
-  json.overrides[0],
-  json.overrides[1],
-  json.overrides[2],
-);
-
-module.exports = nodeLevel3;
+module.exports = { tsVanilla, tsStrict, tsExtra, tsConfig };
