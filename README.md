@@ -26,6 +26,8 @@ To streamline this process, Kiskadee offers three levels of pre-configured ESLin
 
 As we use TypeScript by default at all levels, you should have a `tsconfig.json` file ***at the root*** of your project for the **ESLint plugin for TypeScript** to work properly. If you don't have a **tsconfig.json** file, you can create one with the `tsc --init` command or access the [documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more details.
 
+It is also necessary to have **version 8** of `eslint`, as **version 9** will adopt a different file pattern. Many plugins have not yet migrated to this new pattern, so this is not a concern for now. It is also essential to have **version 6** of `@typescript-eslint/eslint-plugin`, as there have been breaking changes compared to **version 5**.
+
 ## JavaScript - Level 1
 
 **Level 1** provides a solid foundation with the recommended settings of each respective plugin for **TypeScrip**,
@@ -160,9 +162,6 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 ```javascript
     module.exports = {
       extends: ['kiskadee/react-level-1'], // ['kiskadee/react-native-level-1'] for React Native projects
-      rules: {
-        // your rules
-      },
     };
 ```
 
@@ -195,9 +194,6 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typesc
 ```javascript
     module.exports = {
       extends: ['kiskadee/react-level-2'], // ['kiskadee/react-native-level-2'] for React Native projects
-      rules: {
-        // your rules
-      },
     };
 ```
 
@@ -217,9 +213,6 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 ```javascript
     module.exports = {
       extends: ['kiskadee/react-level-3'], // ['kiskadee/react-native-level-3'] for React Native projects
-      rules: {
-        // your rules
-      },
     };
 ```
 
@@ -255,9 +248,6 @@ Adicione `kiskadee/json` à propriedade `extends` do seu arquivo `.eslintrc.js` 
 ```javascript
     module.exports = {
       extends: ['kiskadee/react-level-3', 'kiskadee/json'],
-      rules: {
-        // your rules
-      },
     };
 ```
 
@@ -333,12 +323,24 @@ For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/
 
 ## Patch Notes
 
+### Version 2.0.0
+
+- Updated dependencies to latest versions
+- Added new plugin `eslint-plugin-react-refresh` to level 2 config
+- Reviewed and updated documentation
+
+#### Breaking changes (1.0.0 => 2.0.0)
+
+- Update `@typescript-eslint/eslint-plugin` and `@typescript-eslint/parser` to `^6.0.0` versions
+- For level 2 config, install `eslint-plugin-react-refresh`.
+
 ### Version 1.0.0
 
-- Added _**setup for JSON**_ files
+- Added config for JSON files
 - Replaced `eslint-plugin-no-relative-import-paths` with `eslint-plugin-typescript-paths`
 - Reviewed and updated documentation
 
 #### Breaking changes (0.0.42 => 1.0.0)
 
 - Remove `eslint-plugin-no-relative-import-paths`. Please install `eslint-plugin-typescript-paths` if you are using any level 2 setup.
+
