@@ -141,6 +141,8 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 
 #### ✧ Installation
 
+In your **terminal**, run the command below to install the necessary dependencies:
+
 ```bash
   npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library
 ```
@@ -176,6 +178,14 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
 
 #### ✧ Installation
 
+In your terminal, to install all dependencies, execute:
+
+```bash
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+```
+
+Or if you have already installed the [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1) dependencies, execute:
+
 ```bash
 npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
 ```
@@ -196,7 +206,13 @@ npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typesc
 - 🔥 **All items from level 2**
 - 🚀 **A selection of outstanding rules we've recommended, derived from existing plugins**
 
+#### Installation
+
+Install the dependencies for [level 2](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-2).
+
 #### ✧ Usage
+
+Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)) ***at the root*** of your project and extend `kiskadee/node-level-3`:
 
 ```javascript
     module.exports = {
