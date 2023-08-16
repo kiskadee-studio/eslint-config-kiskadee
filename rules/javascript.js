@@ -115,6 +115,13 @@ const level3 = {
   'arrow-body-style': ['error', 'as-needed'],
 
   /**
+   * This rule requires additional configurations in the tsconfig, its syntax is
+   * more complex and not commonly used. We are disabling this rule until the
+   * usage of this pattern becomes more widespread
+   */
+  'unicorn/prefer-module': 'off',
+
+  /**
    * Rules that impose limitations on syntax usage go beyond the purview of
    * ESLint. We hold the view that certain decisions should be made by
    * developers themselves, rather than constraining their choices. If any
