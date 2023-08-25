@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kiskadee",
-  "version": "3.0.0",
+  "version": "3.0.01",
   "packageManager": "npm@9.5.1",
   "description": "Definitive ESLint configuration for JavaScript or React or React Native, Airbnb Style Guide, Prettier, TypeScript, Unicorn and more",
   "main": "index.js",

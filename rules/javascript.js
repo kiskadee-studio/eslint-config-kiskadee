@@ -50,6 +50,13 @@ const level2 = {
     },
   ],
 
+  /**
+   * The rules are too strict and can hinder the developer's experience
+   */
+  'jsdoc/require-jsdoc': 'off',
+  'jsdoc/require-returns': 'off',
+  'jsdoc/require-param-description': 'off',
+
   //----------------------------------------------------------------------------
   // Resolves conflicts among various ESLint configurations.
   //----------------------------------------------------------------------------
