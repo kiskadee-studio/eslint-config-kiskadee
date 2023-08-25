@@ -78,18 +78,6 @@ const level3 = {
   '@typescript-eslint/ban-ts-comment': 'off',
 
   /**
-   * Functions with explicit return types improve code readability and
-   * maintainability. Without an explicit return type, it can be
-   * difficult to determine what type of value a function returns.
-   * This can lead to confusion and errors down the line. Explicit
-   * return types also help catch type errors during development and
-   * prevent unexpected behavior at runtime. Overall, enforcing
-   * explicit function return types is a good practice for writing
-   * clean and reliable code.
-   */
-  '@typescript-eslint/explicit-function-return-type': 'error',
-
-  /**
    * In certain cases, seasoned developers may find it necessary to use the
    * Non-null assertion operator when working with external libraries or
    * APIs that offer limited TypeScript compatibility, minimizing the
