@@ -81,4 +81,11 @@ module.exports = {
   jsonc: 'plugin:jsonc/recommended-with-jsonc',
   json5: 'plugin:jsonc/recommended-with-json5',
   jsonPrettier: 'plugin:jsonc/prettier',
+
+  /**
+   * Package name: eslint-plugin-jsdoc
+   * @see {https://github.com/gajus/eslint-plugin-jsdoc}
+   */
+  jsdoc: 'plugin:jsdoc/recommended',
+  jsdocTS: 'plugin:jsdoc/recommended-typescript',
 };
