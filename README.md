@@ -332,6 +332,9 @@ For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/
 - Updated dependencies to latest versions
 - Added new plugin `eslint-plugin-jsdoc` to level 2 config
 - Reviewed and updated documentation
+- Rules changed for config level 3:
+  - `no-void`: ***error*** to ***['error', { allowAsStatement: true }]***
+  - `@typescript-eslint/explicit-function-return-type`: ***error*** to ***off***
 
 #### Breaking changes (2.0.0 => 3.0.0)
 
@@ -357,4 +360,5 @@ For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/
 #### Breaking changes (0.0.42 => 1.0.0)
 
 - Remove `eslint-plugin-no-relative-import-paths`. Please install `eslint-plugin-typescript-paths` if you are using any level 2 setup.
+
 

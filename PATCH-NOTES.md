@@ -1,3 +1,18 @@
+## Patch Notes
+
+### Version 3.0.0
+
+- Updated dependencies to latest versions
+- Added new plugin `eslint-plugin-jsdoc` to level 2 config
+- Reviewed and updated documentation
+- Rules changed for config level 3:
+  - `no-void`: ***error*** to ***['error', { allowAsStatement: true }]***
+  - `@typescript-eslint/explicit-function-return-type`: ***error*** to ***off***
+
+#### Breaking changes (2.0.0 => 3.0.0)
+
+- Install `eslint-plugin-jsdoc` if you are using any level 2 setup.
+
 ### Version 2.0.0
 
 - Updated dependencies to latest versions
