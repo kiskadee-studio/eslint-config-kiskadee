@@ -73,19 +73,21 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **TypeScript Paths Plugin** ([eslint-plugin-typescript-paths](https://github.com/kiskadee-studio/eslint-plugin-typescript-paths))
   - _Enforces the use of absolute import and export paths_
+- 🧰 **JSDoc Plugin** ([eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc))
+  - _JSDoc linting rules for ESLint_
 
 ### Installation
 
 In your terminal, to install all dependencies, execute:
 
 ```bash
-  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 Or if you have already installed the [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1) dependencies, execute:
 
 ```bash
-  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 #### ✧ Usage
@@ -174,19 +176,21 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **TypeScript Paths Plugin** ([eslint-plugin-typescript-paths](https://github.com/kiskadee-studio/eslint-plugin-typescript-paths))
   - _Enforces the use of absolute import and export paths_
+- 🧰 **JSDoc Plugin** ([eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc))
+  - _JSDoc linting rules for ESLint_
 
 #### ✧ Installation
 
 In your terminal, to install all dependencies, execute:
 
 ```bash
-  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 Or if you have already installed the [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1) dependencies, execute:
 
 ```bash
-npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 #### ✧ Usage
@@ -323,6 +327,19 @@ For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/
 
 ## Patch Notes
 
+### Version 3.0.0
+
+- Updated dependencies to latest versions
+- Added new plugin `eslint-plugin-jsdoc` to level 2 config
+- Reviewed and updated documentation
+- Rules changed for config level 3:
+  - `no-void`: ***error*** to ***['error', { allowAsStatement: true }]***
+  - `@typescript-eslint/explicit-function-return-type`: ***error*** to ***off***
+
+#### Breaking changes (2.0.0 => 3.0.0)
+
+- Install `eslint-plugin-jsdoc` if you are using any level 2 setup.
+
 ### Version 2.0.0
 
 - Updated dependencies to latest versions
@@ -343,4 +360,5 @@ For `.editorconfig` support, just [install](https://code.visualstudio.com/learn/
 #### Breaking changes (0.0.42 => 1.0.0)
 
 - Remove `eslint-plugin-no-relative-import-paths`. Please install `eslint-plugin-typescript-paths` if you are using any level 2 setup.
+
 

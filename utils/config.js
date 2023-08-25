@@ -22,9 +22,10 @@ module.exports = (level, rules) => {
         extends: [
           plugins.javaScriptAirbnb,
           plugins.unicorn,
+          isLevel2 ? plugins.jsdoc : undefined,
           plugins.vitest,
           plugins.prettier,
-        ],
+        ].filter(Boolean),
 
         rules: { ...rules.js, ...jsOnly },
       },
@@ -60,6 +61,7 @@ module.exports = (level, rules) => {
           // JavaScript / React
           hasReact ? plugins.reactAirbnb : plugins.javaScriptAirbnb,
           isLevel2 ? plugins.unicorn : undefined,
+          isLevel2 ? plugins.jsdocTS : undefined,
 
           // TypeScript
           plugins.typescriptStrict,

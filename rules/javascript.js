@@ -122,6 +122,14 @@ const level3 = {
   'unicorn/prefer-module': 'off',
 
   /**
+   * It is very common to use `void` before promises, and since the return is
+   * not expected, it does not cause any issues. Unlike using `void` in other
+   * contexts, which can generate different values depending on the version of
+   * EcmaScript used.
+   */
+  'no-void': ['error', { allowAsStatement: true }],
+
+  /**
    * Rules that impose limitations on syntax usage go beyond the purview of
    * ESLint. We hold the view that certain decisions should be made by
    * developers themselves, rather than constraining their choices. If any
