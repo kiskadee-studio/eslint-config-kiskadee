@@ -73,19 +73,21 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **TypeScript Paths Plugin** ([eslint-plugin-typescript-paths](https://github.com/kiskadee-studio/eslint-plugin-typescript-paths))
   - _Enforces the use of absolute import and export paths_
+- 🧰 **JSDoc Plugin** ([eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc))
+  - _JSDoc linting rules for ESLint_
 
 ### Installation
 
 In your terminal, to install all dependencies, execute:
 
 ```bash
-  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb-base eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 Or if you have already installed the [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-javascript-rules---level-1) dependencies, execute:
 
 ```bash
-  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+  npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 #### ✧ Usage
@@ -174,19 +176,21 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Finds and removes unused ES6 module imports_
 - 🧰 **TypeScript Paths Plugin** ([eslint-plugin-typescript-paths](https://github.com/kiskadee-studio/eslint-plugin-typescript-paths))
   - _Enforces the use of absolute import and export paths_
+- 🧰 **JSDoc Plugin** ([eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc))
+  - _JSDoc linting rules for ESLint_
 
 #### ✧ Installation
 
 In your terminal, to install all dependencies, execute:
 
 ```bash
-  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 Or if you have already installed the [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1) dependencies, execute:
 
 ```bash
-npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths
+npm i -D eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
 ```
 
 #### ✧ Usage
