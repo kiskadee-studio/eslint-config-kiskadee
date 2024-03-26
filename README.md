@@ -249,7 +249,7 @@ npm i -D eslint-plugin-jsonc
 
 #### ✧ Usage
 
-Adicione `kiskadee/json` à propriedade `extends` do seu arquivo `.eslintrc.js` ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)):
+Add `kiskadee/json` to the `extends` property in your `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-formats)):
 
 ```javascript
     module.exports = {
