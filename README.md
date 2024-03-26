@@ -178,7 +178,7 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Enforces the use of absolute import and export paths_
 - 🧰 **JSDoc Plugin** ([eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc))
   - _JSDoc linting rules for ESLint_
-- 🧰 **React Refresh Plugin** ([eslint-plugin-react-refresh](github.com/ArnaudBarre/eslint-plugin-react-refresh)
+- 🧰 **React Refresh Plugin** ([eslint-plugin-react-refresh](github.com/ArnaudBarre/eslint-plugin-react-refresh))
   - _Validate that your components can safely be updated with fast refresh_ 
 
 #### ✧ Installation
