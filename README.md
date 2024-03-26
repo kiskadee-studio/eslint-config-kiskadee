@@ -178,13 +178,15 @@ Create a `.eslintrc.js` file ([or equivalent](https://eslint.org/docs/latest/use
   - _Enforces the use of absolute import and export paths_
 - 🧰 **JSDoc Plugin** ([eslint-plugin-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc))
   - _JSDoc linting rules for ESLint_
+- 🧰 **React Refresh Plugin** ([eslint-plugin-react-refresh](github.com/ArnaudBarre/eslint-plugin-react-refresh)
+  - _Validate that your components can safely be updated with fast refresh_ 
 
 #### ✧ Installation
 
 In your terminal, to install all dependencies, execute:
 
 ```bash
-  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc
+  npm i -D eslint eslint-config-kiskadee eslint-config-airbnb eslint-plugin-import typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript prettier eslint-plugin-prettier eslint-config-prettier vitest eslint-plugin-vitest eslint-plugin-testing-library eslint-plugin-unicorn eslint-plugin-unused-imports eslint-plugin-typescript-paths eslint-plugin-jsdoc eslint-plugin-react-refresh
 ```
 
 Or if you have already installed the [level 1](https://github.com/kiskadee-studio/eslint-config-kiskadee#-essential-react-rules---level-1) dependencies, execute:
